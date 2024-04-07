@@ -1,0 +1,16 @@
+<div class="masthead">
+    <a href="{{ site.url }}" class="logo">{{ site.title }} <span> {{ site.subtitle }} </span></a>
+
+    <ul class="navbar">
+        {% for link in site.data.navigation.main %}
+        <li>
+            <a href="{{ link.url | relative.url}}">{{ link.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <div class="h-right">
+        {% for social in site.data.navigation.social %}
+        <a href="{{ social.url }}"><i class="{{social.icon}}"></i></a>
+        {% endfor %}
+    </div>
+</div>

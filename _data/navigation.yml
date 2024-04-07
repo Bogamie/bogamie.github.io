@@ -1,0 +1,19 @@
+# main links
+main:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Category"
+    url: /categories/
+  - title: "Posts"
+    url: /posts/
+
+social:
+  - icon: "ri-instagram-fill"
+    url: "https://www.instagram.com/bok_yeom"
+  - icon: "ri-google-fill"
+    url: "mailto:bogamie02@gmail.com"
+  - icon: "ri-github-fill"
+    url: "https://github.com/Bogamie"
+    

@@ -1,0 +1,257 @@
+.about-section {
+    padding: 150px 17% 60px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px -15px;
+    position: relative;
+}
+
+.section .container {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.section-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    color: var(--text-color);
+    font-weight: 800;
+    position: relative;
+}
+
+.section-title h2::before {
+    content: '';
+    height: 4px;
+    width: 60px;
+    background-color: var(--main-color);
+    position: absolute;
+    margin-top: 5px;
+    top: 100%;
+    left: 0;
+}
+
+.section-title h2::after {
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 13px;
+}
+
+.about-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about-text {
+    flex: 0 0 70%;
+}
+
+.profileImg {
+    margin: 100px 0 0 60px;
+    /*위 0 0 왼쪽*/
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+}
+
+.profileImg img {
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.about-text h3 {
+    font-size: 24px;
+    margin-top: 60px;
+    margin-bottom: 15px;
+    font-weight: 800;
+    color: var(--text-color);
+    margin-left: 16px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-color);
+}
+
+.personal-info {
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin-top: 70px;
+}
+
+.info-item {
+    flex: 0 0 45%;
+    max-width: 45%;
+}
+
+.info-item p {
+    /*출생연도*/
+    font-weight: 800;
+    padding: 5px 0;
+    margin-right: 20px;
+    font-size: 16px;
+    color: var(--text-color);
+    border-bottom: 1px solid rgb(189, 189, 189);
+}
+
+.info-item span {
+    /*나이*/
+    font-weight: 400;
+    color: var(--text-color);
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.skills {
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 70px;
+}
+
+.skill-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.skill-item h5 {
+    line-height: 25px;
+    font-weight: 800;
+    font-size: 16px;
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+
+.progress-i {
+    background-color: #bdbdbd;
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+
+.progress-in {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--main-color);
+}
+
+.skill-percent {
+    position: absolute;
+    right: 0;
+    color: var(--text-color);
+    top: -35px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+
+.edu-section {
+    padding: 20px 13% 60px;
+}
+
+.education,
+.experience {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}
+
+h3.title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+.timeline-box {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 20px;
+}
+
+.timeline {
+    background-color: #f4f4f4;
+    padding: 30px 15px;
+    border: 0.5px solid var(--text-color);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.shadow-dark {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.timeline-item {
+    position: relative;
+    padding: 0 30px 30px;
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-item::before {
+    content: '';
+    width: 2px;
+    position: absolute;
+    height: 130%;
+    left: 7px;
+    top: -12px;
+    background-color: var(--main-color);
+}
+
+.timeline-date {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #616161;
+}
+
+.timeline-date .fa {
+    margin-right: 5px;
+}
+
+.timeline-title {
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 15px;
+    /* text-transform: capitalize; */
+    color: #616161;
+}
+
+.circle-dot {
+    position: absolute;
+    left: 2px;
+    top: 2.7px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+}
+
+.timeline-text {
+    line-height: 25px;
+    font-size: 16px;
+    /* text-align: justify; */
+}
