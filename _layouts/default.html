@@ -10,6 +10,10 @@
     <!-- 제목 -->
     <title>보겸 Blog</title>
     
+    {% if page.use_math %}
+      {% include mathjax_support.html %}
+    {% endif %}
+
     <!-- boxicons 링크 -->
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
