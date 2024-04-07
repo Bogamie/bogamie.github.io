@@ -26,10 +26,6 @@
     --main-color: #3fc65c;
 }
 
-body {
-    background: #000;
-}
-
 section {
     padding: 70px 17% 60px;
 }
@@ -105,6 +101,13 @@ section {
     cursor: pointer;
 }
 
+.copyright p {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    color: #979797;
+    font-size: 15px;
+}
 
 /* 4k (해상도 2560px ~ ) */
 @media all and (min-width:2560px) {
