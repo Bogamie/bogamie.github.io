@@ -68,22 +68,30 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
 plugins:
   - jekyll-purgecss
 
 css_dir: "assets/css" # defaults to "css"
 
-# defaults:
-#   # _posts
-#   - scope:
-#       path: ""
-#       type: posts
-#     values:
-#       layout: single
-#       author_profile: true
-#       read_time: true
-#       comments: true
-#       share: true
-#       related: true
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      mathjax: true
+      # author_profile: true
+      # read_time: true
+      # comments: true
+      # share: true
+      related: true
+      # sidebar_main: true
