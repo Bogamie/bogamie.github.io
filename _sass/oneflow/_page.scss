@@ -27,11 +27,104 @@
   max-width: 30%;
   // background-color: aqua; /* 패딩과 경계 상자를 포함한 크기 설정 */
   overflow: auto;
-  position: -webkit-sticky;
+  // position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: 10px;
   // padding:70px 0 0 12px;
 }
-.toc__menu a {
-  color: #000;
+// .toc__menu a {
+//   color: #000;
+// }
+
+
+.nav__title {
+  margin: 0;
+  padding: 0.5rem 0.75rem;
+  // font-family: $sans-serif-narrow;
+  // font-size: $type-size-5;
+  font-weight: bold;
+}
+
+.nav__sub-title {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.25rem 0;
+  // font-family: $sans-serif-narrow;
+  // font-size: $type-size-6;
+  font-weight: bold;
+  text-transform: uppercase;
+  // border-bottom: 1px solid $border-color;
+}
+
+/*
+     Table of contents navigation
+     ========================================================================== */
+
+.toc {
+  // font-family: $sans-serif-narrow;
+  // color: $gray;
+  // background-color: $background-color;
+  // border: 1px solid $border-color;
+  // border-radius: $border-radius;
+  // -webkit-box-shadow: $box-shadow;
+  // box-shadow: $box-shadow;
+
+  .nav__title {
+    color: #fff;
+    // font-size: $type-size-6;
+    // background: $primary-color;
+    // border-top-left-radius: $border-radius;
+    // border-top-right-radius: $border-radius;
+  }
+
+  // Scrollspy marks toc items as .active when they are in focus
+  .active a {
+    // @include yiq-contrasted($active-color);
+  }
+}
+
+.toc__menu {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  // font-size: $type-size-6;
+
+  // @include breakpoint($large) {
+  //   font-size: $type-size-7;
+  // }
+
+  a {
+    display: block;
+    padding: 0.25rem 0.75rem;
+    color: #000;
+    font-weight: bold;
+    line-height: 1.5;
+    // border-bottom: 1px solid $border-color;
+
+    &:hover {
+      // color: $text-color;
+    }
+  }
+
+  li ul > li a {
+    padding-left: 1.25rem;
+    font-weight: normal;
+  }
+
+  li ul li ul > li a {
+    padding-left: 1.75rem;
+  }
+
+  li ul li ul li ul > li a {
+    padding-left: 2.25rem;
+  }
+
+  li ul li ul li ul li ul > li a {
+    padding-left: 2.75rem;
+  }
+
+  li ul li ul li ul li ul li ul > li a {
+    padding-left: 3.25rem
+  }
 }
