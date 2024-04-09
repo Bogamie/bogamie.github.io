@@ -11,7 +11,7 @@ html {
 }
 
 /* Masthead 스타일 */
-.mastheadd {
+.masthead {
   position: fixed;
   top: 0;
   right: 0;
@@ -25,59 +25,61 @@ html {
   transition: all .50s ease;
 }
 
-.logod {
+
+
+.logo {
   font-size: 2vw;
-  color: #000;
   font-weight: 800;
+  color: var(--text-color-l);
 }
 
 span {
-  color: #3fc65c;
+  color: var(--main-color);
 }
 
-.navbard {
+.navbar {
   display: flex;
 }
 
-.navbard a {
-  color: #000;
+.navbar a {
   font-size: 1.25vw;
   font-weight: 600;
+  color: var(--text-color-l);
   margin: 1vw 1.25vw;
   transition: all .50s ease;
 }
 
-.navbard a:hover {
-  color: #3fc65c;
+
+.navbar a:hover {
+  color: var(--main-color);
 }
 
-.h-rightd {
+.h-right {
   display: flex;
   align-items: center;
 }
 
-.h-rightd a:first-child {
-  color: #000;
+.h-right a:first-child {
   font-size: 1.2vw;
+  color: var(--text-color-l);
   margin-right: 1.5vw;
 }
 
-.h-rightd a {
-  vertical-align: middle;
+.h-right a {
   font-size: 1.2vw;
-  color: #000;
+  color: var(--text-color-l);
   margin-right: 1.5vw;
   margin-left: 1.5vw;
   transition: all .50s ease;
 }
 
-.h-rightd a:hover {
-  color: #3fc65c;
+.h-right a:hover {
+  color: var(--main-color);
   transform: translateY(-3px);
 }
 
 /* Sticky 상태일 때의 Masthead 스타일 */
-.mastheadd.sticky {
+.masthead.sticky {
   padding: 5px 13%;
   background: transparent;
   backdrop-filter: blur(35px);
@@ -91,4 +93,16 @@ ul:not(.browser-default)>li {
 /* 링크 텍스트 스타일 제거 */
 a {
   text-decoration: none;
+}
+
+.masthead.dark .logo,
+.masthead.dark .navbar a,
+.masthead.dark .h-right a {
+  color: var(--text-color-d);
+}
+
+.dark .h-right a:hover,
+.dark .navbar a:hover {
+  color: var(--main-color);
+
 }

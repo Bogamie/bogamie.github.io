@@ -1,11 +1,32 @@
+/* noto-sans-kr-regular - korean_latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/font/noto-sans-kr-v36-korean_latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* noto-sans-kr-800 - korean_latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 800;
+    src: url('/assets/font/noto-sans-kr-v36-korean_latin-800.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 :root {
     // 라이트 모드
-    --text-color-l  : #000000
-    --bg-color-l    : #FFFFFF
-    --main-color-l  : #3fc65c
+    --text-color-l  : #000000; // 검정
+    --bg-color-l    : #FFFFFF; // 하양
 
     // 다크 모드
-    --text-color-d  : #FFFFFF
-    --bg-color-d    : #000000
-    --main-color-d  : #3fc65c
+    --text-color-d  : #FFFFFF;
+    --bg-color-d    : #000000;
+
+    --main-color    : #3fc65c;
+    font-family: "Noto Sans KR", sans-serif;
 }
