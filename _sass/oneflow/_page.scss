@@ -1,0 +1,37 @@
+.page__content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  line-height: 1.3rem;
+}
+
+.page__title {
+  padding-top: 5%;
+}
+
+.p-name a {
+  color: #000;
+  font-size: 32px;
+  padding-left: 20%;
+}
+
+.page__content .content__bok {
+  flex: 0 0 70%;
+  max-width: 70%;
+}
+
+// toc
+.sidebar__right {
+  // position: fixed;
+  flex: 0 0 30%;
+  max-width: 30%;
+  // background-color: aqua; /* 패딩과 경계 상자를 포함한 크기 설정 */
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  // padding:70px 0 0 12px;
+}
+.toc__menu a {
+  color: #000;
+}

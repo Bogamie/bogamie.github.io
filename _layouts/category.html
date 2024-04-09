@@ -35,10 +35,10 @@ layout: default
             </div>
         </div>
         <div class="chapter">
-            {% assign filtered_posts_2 = site.posts | where: "bigtitle", "제3장 트랜스포트 계층" %}
+            {% assign filtered_posts_3 = site.posts | where: "bigtitle", "제3장 트랜스포트 계층" %}
             <h3>제3장 트랜스포트 계층</h3>
             <div class="contents">
-                {% for post in filtered_posts_2 reversed %}
+                {% for post in filtered_posts_3 reversed %}
                 <a href="{{site.baseurl}}{{post.url}}" class="">
                     <h4>{{post.title}}</h4>
                 </a>

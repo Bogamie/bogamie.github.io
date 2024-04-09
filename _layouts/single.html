@@ -32,7 +32,7 @@ layout: default
 
       <section class="page__content e-content" itemprop="text">
         {% if page.toc %}
-        <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
+        <aside class="sidebar__right">
           <nav class="toc">
             <header>
               <h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label
@@ -42,7 +42,9 @@ layout: default
           </nav>
         </aside>
         {% endif %}
-        {{ content }}
+        <div class="content__bok">          
+          {{ content }}
+        </div>
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{
             site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
