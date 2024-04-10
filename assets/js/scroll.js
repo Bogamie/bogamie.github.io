@@ -1,5 +1,5 @@
-const header = document.querySelector(".masthead, .mastheadd");
+const header = document.querySelector(".masthead");
 
 window.addEventListener("scroll", function () {
-  header.classList.toggle("sticky", window.scrollY > 80);
+  header.classList.toggle("stickyHead", window.scrollY > 80);
 });

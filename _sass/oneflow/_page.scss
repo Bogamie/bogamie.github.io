@@ -1,11 +1,38 @@
 .post__main {
   display: flex;
+  // flex-flow: row nowrap;
   flex-direction: row;
   justify-content: space-around;
   line-height: 1.3rem;
-  padding: 8% 7%;
+  padding: 8% 7% 5%;
   gap: 2%;
+  position: relative;
 }
+
+.nav__left {
+  position: sticky;
+  height: 100%;
+  width: 20%;
+  top: 7%;
+}
+.post__content {
+  width: 60%;
+}
+.nav__right {
+  position: sticky;
+  height: 100%;
+  width: 20%;
+  top: 7%;
+}
+// .bottom__page {
+//   position: absolute;
+//   // display: grid;
+//   bottom: 0; /* post__content 요소의 하단에 배치합니다. */
+//   width: 100%;
+//   padding: 8% 7%;
+//   background-color:cadetblue;
+// }
+
 
 // .page__title {
 //   padding-top: 5%;
