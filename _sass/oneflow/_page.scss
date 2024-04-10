@@ -1,130 +1,132 @@
-.page__content {
+.post__main {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-around;
   line-height: 1.3rem;
+  padding: 8% 7%;
+  gap: 2%;
 }
 
-.page__title {
-  padding-top: 5%;
-}
-
-.p-name a {
-  color: #000;
-  font-size: 32px;
-  padding-left: 20%;
-}
-
-.page__content .content__bok {
-  flex: 0 0 70%;
-  max-width: 70%;
-}
-
-// toc
-.sidebar__right {
-  // position: fixed;
-  flex: 0 0 30%;
-  max-width: 30%;
-  // background-color: aqua; /* 패딩과 경계 상자를 포함한 크기 설정 */
-  overflow: auto;
-  // position: -webkit-sticky;
-  position: sticky;
-  top: 10px;
-  // padding:70px 0 0 12px;
-}
-// .toc__menu a {
-//   color: #000;
+// .page__title {
+//   padding-top: 5%;
 // }
 
+// .p-name a {
+//   color: #000;
+//   font-size: 32px;
+//   padding-left: 20%;
+// }
 
-.nav__title {
-  margin: 0;
-  padding: 0.5rem 0.75rem;
-  // font-family: $sans-serif-narrow;
-  // font-size: $type-size-5;
-  font-weight: bold;
-}
+// .page__content .content__bok {
+//   flex: 0 0 70%;
+//   max-width: 70%;
+// }
 
-.nav__sub-title {
-  display: block;
-  margin: 0.5rem 0;
-  padding: 0.25rem 0;
-  // font-family: $sans-serif-narrow;
-  // font-size: $type-size-6;
-  font-weight: bold;
-  text-transform: uppercase;
-  // border-bottom: 1px solid $border-color;
-}
+// // toc
+// .sidebar__right {
+//   // position: fixed;
+//   flex: 0 0 30%;
+//   max-width: 30%;
+//   // background-color: aqua; /* 패딩과 경계 상자를 포함한 크기 설정 */
+//   overflow: auto;
+//   // position: -webkit-sticky;
+//   position: sticky;
+//   top: 10px;
+//   // padding:70px 0 0 12px;
+// }
+// // .toc__menu a {
+// //   color: #000;
+// // }
 
-/*
-     Table of contents navigation
-     ========================================================================== */
 
-.toc {
-  // font-family: $sans-serif-narrow;
-  // color: $gray;
-  // background-color: $background-color;
-  // border: 1px solid $border-color;
-  // border-radius: $border-radius;
-  // -webkit-box-shadow: $box-shadow;
-  // box-shadow: $box-shadow;
+// .nav__title {
+//   margin: 0;
+//   padding: 0.5rem 0.75rem;
+//   // font-family: $sans-serif-narrow;
+//   // font-size: $type-size-5;
+//   font-weight: bold;
+// }
 
-  .nav__title {
-    color: #fff;
-    // font-size: $type-size-6;
-    // background: $primary-color;
-    // border-top-left-radius: $border-radius;
-    // border-top-right-radius: $border-radius;
-  }
+// .nav__sub-title {
+//   display: block;
+//   margin: 0.5rem 0;
+//   padding: 0.25rem 0;
+//   // font-family: $sans-serif-narrow;
+//   // font-size: $type-size-6;
+//   font-weight: bold;
+//   text-transform: uppercase;
+//   // border-bottom: 1px solid $border-color;
+// }
 
-  // Scrollspy marks toc items as .active when they are in focus
-  .active a {
-    // @include yiq-contrasted($active-color);
-  }
-}
+// /*
+//      Table of contents navigation
+//      ========================================================================== */
 
-.toc__menu {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  list-style: none;
-  // font-size: $type-size-6;
+// .toc {
+//   // font-family: $sans-serif-narrow;
+//   // color: $gray;
+//   // background-color: $background-color;
+//   // border: 1px solid $border-color;
+//   // border-radius: $border-radius;
+//   // -webkit-box-shadow: $box-shadow;
+//   // box-shadow: $box-shadow;
 
-  // @include breakpoint($large) {
-  //   font-size: $type-size-7;
-  // }
+//   .nav__title {
+//     color: #fff;
+//     // font-size: $type-size-6;
+//     // background: $primary-color;
+//     // border-top-left-radius: $border-radius;
+//     // border-top-right-radius: $border-radius;
+//   }
 
-  a {
-    display: block;
-    padding: 0.25rem 0.75rem;
-    color: #000;
-    font-weight: bold;
-    line-height: 1.5;
-    // border-bottom: 1px solid $border-color;
+//   // Scrollspy marks toc items as .active when they are in focus
+//   .active a {
+//     // @include yiq-contrasted($active-color);
+//   }
+// }
 
-    &:hover {
-      // color: $text-color;
-    }
-  }
+// .toc__menu {
+//   margin: 0;
+//   padding: 0;
+//   width: 100%;
+//   list-style: none;
+//   // font-size: $type-size-6;
 
-  li ul > li a {
-    padding-left: 1.25rem;
-    font-weight: normal;
-  }
+//   // @include breakpoint($large) {
+//   //   font-size: $type-size-7;
+//   // }
 
-  li ul li ul > li a {
-    padding-left: 1.75rem;
-  }
+//   a {
+//     display: block;
+//     padding: 0.25rem 0.75rem;
+//     color: #000;
+//     font-weight: bold;
+//     line-height: 1.5;
+//     // border-bottom: 1px solid $border-color;
 
-  li ul li ul li ul > li a {
-    padding-left: 2.25rem;
-  }
+//     &:hover {
+//       // color: $text-color;
+//     }
+//   }
 
-  li ul li ul li ul li ul > li a {
-    padding-left: 2.75rem;
-  }
+//   li ul > li a {
+//     padding-left: 1.25rem;
+//     font-weight: normal;
+//   }
 
-  li ul li ul li ul li ul li ul > li a {
-    padding-left: 3.25rem
-  }
-}
+//   li ul li ul > li a {
+//     padding-left: 1.75rem;
+//   }
+
+//   li ul li ul li ul > li a {
+//     padding-left: 2.25rem;
+//   }
+
+//   li ul li ul li ul li ul > li a {
+//     padding-left: 2.75rem;
+//   }
+
+//   li ul li ul li ul li ul li ul > li a {
+//     padding-left: 3.25rem
+//   }
+// }
