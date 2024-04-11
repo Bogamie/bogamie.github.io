@@ -1,20 +1,24 @@
 {% assign categories_reversed = page.categories | reverse %}
 {% for category in categories_reversed %}
-  <h2>{{ category }}</h2>
-  {% assign bigtitles = "" %}
-  {% assign posts_in_category = site.posts | where: "categories", category %}
-  {% assign posts_in_category_reversed = posts_in_category | reverse %}
-  {% for post in posts_in_category_reversed %}
-    {% unless bigtitles contains post.bigtitle %}
-      <h3>{{ post.bigtitle }}</h3>
-      {% assign bigtitles = bigtitles | append: post.bigtitle | append: "," %}
-    {% endunless %}
-    <ul>
-      {% for subtitle in post.title %}
-      <a href="{{site.baseurl}}{{post.url}}" class="">
-        <h4>{{ subtitle }}</h4>
-    </a>
-      {% endfor %}
-    </ul>
+<div class="category__title">
+  {{ category }}
+</div>
+{% assign bigtitles = "" %}
+{% assign posts_in_category = site.posts | where: "categories", category %}
+{% assign posts_in_category_reversed = posts_in_category | reverse %}
+{% for post in posts_in_category_reversed %}
+{% unless bigtitles contains post.bigtitle %}
+<div class="big__title">
+  {{ post.bigtitle }}
+</div>
+{% assign bigtitles = bigtitles | append: post.bigtitle | append: "," %}
+{% endunless %}
+<ul>
+  {% for subtitle in post.title %}
+  <a href="{{site.baseurl}}{{post.url}}" class="sub__title">
+    {{ subtitle }}
+  </a>
   {% endfor %}
+</ul>
+{% endfor %}
 {% endfor %}
