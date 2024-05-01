@@ -1,12 +1,12 @@
 ---
 layout: default
 ---
-<section class="post__main">
-  <div class="nav__left">
+<div class="post__main">
+  <section class="nav__left">
     {% include sidebar.html %}
-  </div>
+  </section>
 
-  <div class="post__content">
+  <section class="post__content">
     <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
       {% if page.title %}
       <meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{%
@@ -42,9 +42,9 @@ layout: default
         {% include post_pagination.html %}
       </div>
     </article>
-  </div>
+  </section>
 
-  <div class="nav__right">
+  <section class="nav__right">
     {% if page.toc %}
     <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
       <nav class="toc">
@@ -57,7 +57,7 @@ layout: default
       </nav>
     </aside>
     {% endif %}
-  </div>
+  </section>
   <!-- <div class="bottom__page">
     {% comment %}{% endcomment %}
     {% if page.id and page.related and site.related_posts.size > 0 %}
@@ -86,4 +86,6 @@ layout: default
     </div>
     {% endif %}
   </div> -->
-</section>
+</div>
+
+<script src="{{ site.baseurl }}/assets/js/dropdown.js"></script>

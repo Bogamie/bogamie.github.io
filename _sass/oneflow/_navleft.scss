@@ -1,0 +1,119 @@
+.nav__left {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  height: 100%;
+  margin-right: 1.5%;
+  width: 18.5%;
+  top: 7%;
+}
+.category__title {
+  font-size: $type-size-5;
+  font-weight: 600;
+}
+.nav__left li:last-child .dropdown {
+  border-bottom: 0;
+}
+.nav__left li.active .dropdown {
+  color: #fff;
+}
+.nav__left li.active .dropdown  .ri-arrow-left-s-line {
+  transform: rotate(180deg);
+}
+
+.dropdown {
+  cursor: pointer;
+  display: flex;
+  padding: 0.5rem 0.25rem;
+  font-size: $type-size-6;
+  font-weight: 800;
+  border-bottom: 1px solid mix(#fff, #7a8288, 70%);
+  position: relative;
+  transition: all 0.2s ease-out;
+  overflow: hidden;
+}
+
+.dropdown:hover {
+  background: var(--main-color);
+}
+
+.dropdown i {
+  top: 0.25rem;
+  left: 0.25rem;
+}
+
+.dropdown .ri-arrow-left-s-line {
+  margin-left: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.submenuItems {
+  display: none;
+}
+
+.nav__left li.active .submenuItems {
+  display: block;
+}
+
+.submenuItems a {
+  display: block;
+  transition: all 0.2s ease-out;
+}
+
+.submenuItems a:hover {
+  background: var(--main-color);
+}
+
+// .nav__left {
+//   .category__title {
+//     margin: 0;
+//     padding: 0.5rem 0.75rem;
+//     font-weight: 900;
+//     color: #000;
+//     font-size: $type-size-5;
+//     background: var(--main-color);
+//     border-top-left-radius: 6px;
+//     border-top-right-radius: 6px;
+//   }
+
+//   .big__title {
+//     font-size: $type-size-6;
+//     font-weight: 800;
+//     padding: 0.7em 0 0;
+//   }
+
+//   .sub__title {
+//     font-size: $type-size-6;
+//     font-weight: 400;
+//     padding: 0.4em;
+//     color: var(--text-color-l);
+//   }
+
+//   .sub__title:hover {
+//     transform: translate(10px);
+//     background: transparent;
+//     color: var(--main-color);
+//     transition: all .20s ease;
+//   }
+// }
+
+// .nav__left li:last-child .dropdown {
+//   border-bottom: 0;
+// }
+
+// .dropdown {
+//   cursor: pointer;
+//   display: block;
+//   padding: 15px 15px 15px 45px;
+//   border-bottom: 2px solid #2d374d;
+//   color: #999;
+//   position: relative;
+//   transition: all .40s ease-out;
+// }
+
+// .dropdown i {
+//   position: absolute;
+//   top: 17px;
+//   left: 16px;
+// }
