@@ -10,6 +10,13 @@
 .post__content {
   width: 60%;
 }
+:target:before {
+  content: "";
+  display: block;
+  height: 50px; /* 메뉴바의 높이에 맞게 조절 */
+  margin-top: -50px; /* 메뉴바의 높이에 맞게 조절 */
+  visibility: hidden;
+}
 
 .markdown-body {
   -ms-text-size-adjust: 100%;
