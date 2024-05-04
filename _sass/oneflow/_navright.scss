@@ -4,6 +4,7 @@
     margin-left: 1.5%;
     width: 18.5%;
     top: 7%;
+    overflow: scroll;
 }
 .nav__right ul,
 .nav__right li {
@@ -11,7 +12,6 @@
 }
 .toc {
     color: #7a8288;
-    // background-color: $background-color;
     border: 1px solid mix(#fff, #7a8288, 70%);
     border-radius: 6px;
   
@@ -35,9 +35,9 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    // list-style: none;
     font-size: $type-size-6;
-  
+    overflow-y: auto;
+    max-height: calc(100vh - 10em);
     // @include breakpoint($large) {
     //   font-size: $type-size-7;
     // }
