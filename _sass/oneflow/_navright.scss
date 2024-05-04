@@ -5,7 +5,10 @@
     width: 18.5%;
     top: 7%;
 }
-
+.nav__right ul,
+.nav__right li {
+  list-style-type: none;
+}
 .toc {
     color: #7a8288;
     // background-color: $background-color;
@@ -32,7 +35,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    list-style: none;
+    // list-style: none;
     font-size: $type-size-6;
   
     // @include breakpoint($large) {
