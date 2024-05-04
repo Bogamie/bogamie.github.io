@@ -6,25 +6,27 @@
 <div class="category__title">
   {{ category }}
 </div>
-
-{% assign bigtitles = "" %}
-{% assign posts_in_category = site.posts | where: "categories", category %}
-{% assign posts_in_category_reversed = posts_in_category | reverse %}
-
-{% for post in posts_in_category_reversed %} <!-- 2 -->
-{% unless bigtitles contains post.bigtitle %} <!-- 3 -->
-<div class="dropdown">
-  {{ post.bigtitle }}
-  <i class="ri-arrow-left-s-line"></i>
-</div>
-{% endunless %} <!-- 3 -->
-{% assign bigtitles = bigtitles | append: post.bigtitle | append: "," %}
-<ul class="submenuItems">
-  <li>
-    <a href="{{site.baseurl}}{{post.url}}" class="sub__title">
-      {{ post.title }}
-    </a>
-  </li>
-</ul>
-{% endfor %} <!-- 2 -->
+  {% assign bigtitles = "" %}
+  {% assign posts_in_category = site.posts | where: "categories", category %}
+  {% assign posts_in_category_reversed = posts_in_category | reverse %}
+  
+  {% for post in posts_in_category_reversed %} <!-- 2 -->
+  {% unless bigtitles contains post.bigtitle %}
+<li class="link">
+ <!-- 3 -->
+  <div class="dropdown">
+    {{ post.bigtitle }}
+    <i class="ri-arrow-left-s-line"></i>
+  </div>
+  {% endunless %} <!-- 3 -->
+  {% assign bigtitles = bigtitles | append: post.bigtitle | append: "," %}
+  <ul class="submenuItems">
+    <li>
+      <a href="{{site.baseurl}}{{post.url}}" class="sub__title">
+        {{ post.title }}
+      </a>
+    </li>
+  </ul>
+  {% endfor %} <!-- 2 -->
+</li>
 {% endfor %} <!-- 1 -->
