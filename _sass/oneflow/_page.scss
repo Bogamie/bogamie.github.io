@@ -121,6 +121,7 @@
 }
 
 .markdown-body img {
+  display: block;
   border-style: none;
   max-width: 100%;
   box-sizing: content-box;
@@ -751,6 +752,7 @@
 }
 
 .markdown-body .highlight {
+  margin: auto 0;
   margin-bottom: 16px
 }
 
