@@ -12,7 +12,7 @@ toc_sticky: true
 use_math: true
  
 date: 2024-05-03
-last_modified_at: 2024-05-03
+last_modified_at: 2024-05-07
 ---
 ![image](https://github.com/Bogamie/bogamie.github.io/assets/162293185/c2bb9065-0eff-401d-8ce1-1c7909843cd2){: height="80%" width="80%"}
 
@@ -91,4 +91,9 @@ last_modified_at: 2024-05-03
 
 #### 최선형 서비스(best-effort-service)
 
-&nbsp;&nbsp;인터넷 네트워크 계층은 최선형 서비스를 제공한다.
+&nbsp;&nbsp;인터넷 네트워크 계층은 최선형 서비스를 제공한다. 
+
+- 패킷을 보내는 순서대로 수신됨을 보장하지 않는다.
+- 목적지까지 패킷이 전송됨을 보장하지 않는다.
+- 종단 시스템 간 지연이 보장되지 않는다.
+- 보장된 최소 대역폭이 없다.
