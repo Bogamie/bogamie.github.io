@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.wrapper-as {
+    text-align: left;
+    padding: 70px 25% 60px;
+}
+
+.banner-area-as {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+.banner-area-as h2 {
+    padding-top: 10%;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+}
+
+.bg-img-as {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.bg-img-as img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom center;
+}
+
+.wrapper-as {
+    position: relative;
+    width: 100%;
+    top: 40vh;
+    background: rgb(255, 255, 255);
+    height: 100%;
+    align-items: center;
+}
+
+.wrapper-as h2 {
+    font-size: 40px;
+    margin-top: 70px;
+    color: var(--text-color);
+    font-weight: 800;
+    position: relative;
+}
+
+.wrapper-as h2::before {
+    content: '';
+    height: 4px;
+    width: 60px;
+    background-color: var(--main-color);
+    position: absolute;
+    margin-top: 5px;
+    top: 100%;
+    left: 0;
+}
+
+.wrapper-as h2::after {
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 13px;
+}
+
+.chapter-as {
+    margin-top: 50px;
+}
+
+.chapter-as h3 {
+    padding-left: 15%;
+    padding-bottom: 10px;
+    font-size: 30px;
+    color: var(--text-color);
+}
+
+.contents-as {
+    padding: 0 10%;
+}
+
+.chapter-as h4 {
+    text-align: left;
+    padding-left: 60px;
+    padding-top: 20px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    transition: all .20s ease;
+}
+
+.chapter-as h4:hover {
+    color: #3fc65c;
+    transform: translateY(-1px);
+}
