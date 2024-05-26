@@ -1,14 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-
-.wrapper-as {
-    text-align: left;
-    padding: 70px 25% 60px;
-}
-
 .banner-area-as {
     position: fixed;
     height: 100vh;
@@ -39,41 +28,19 @@
 
 .wrapper-as {
     position: relative;
+    display: flex;
+    justify-content: space-around;
     width: 100%;
     top: 40vh;
+    line-height: 1.3rem;
     background: rgb(255, 255, 255);
+    padding: 8% 7% 5%;
     height: 100%;
     align-items: center;
 }
 
-.wrapper-as h2 {
-    font-size: 40px;
-    margin-top: 70px;
-    color: var(--text-color);
-    font-weight: 800;
-    position: relative;
-}
-
-.wrapper-as h2::before {
-    content: '';
-    height: 4px;
-    width: 60px;
-    background-color: var(--main-color);
-    position: absolute;
-    margin-top: 5px;
-    top: 100%;
-    left: 0;
-}
-
-.wrapper-as h2::after {
-    content: '';
-    height: 4px;
-    width: 25px;
-    background-color: var(--main-color);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    margin-top: 13px;
+.post__content {
+    width: 60%;
 }
 
 .chapter-as {

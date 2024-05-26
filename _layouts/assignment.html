@@ -3,27 +3,69 @@ layout: default
 permalink: /assignments/
 ---
 
-<div class="category-as">
+<div class="assignment">
     <div class="banner-area">
         <picture class="bg-img-as">
             <img src="/assets/images/background3.webp" alt="">
         </picture>
         <h2>Assignments</h2>
     </div>
-    <div class="wrapper">
-        <div class="markdown-body">
-            {% assign assignment_posts = site.posts | where: "categories", "Assignment" %}
-            {% for assignment in assignment_posts %}
-            <article>
+    <div class="wrapper-as">
+        <section class="post__content">
+            <div class="markdown-body">
+                <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+                    {% if page.title %}
+                    <meta itemprop="headline"
+                        content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">
+                    {% endif %}
+                    {% if page.excerpt %}
+                    <meta itemprop="description"
+                        content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">
+                    {% endif %}
+                    {% if page.date %}
+                    <meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">
+                    {% endif %}
+                    {% if page.last_modified_at %}
+                    <meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">
+                    {% endif %}
+
+                    <div class="page__inner-wrap">
+                        {% unless page.header.overlay_color or page.header.overlay_image %}
+                        <header>
+                            {% if page.title %}
+                            <h1 id="page-title" class="page__title p-name" itemprop="headline">
+                                <a href="{{ page.url | absolute_url }}" class="u-url" itemprop="url">{{ page.title |
+                                    markdownify | remove: "<p>" | remove: "</p>" }}</a>
+                            </h1>
+                            {% endif %}
+                            {% include page__meta.html %}
+                        </header>
+                        {% endunless %}
+
+                        <section class="page__content e-content" itemprop="text">
+                            {{ content }}
+                            {% if page.link %}
+                            <div><a href="{{ page.link }}" class="btn btn--primary">{{
+                                    site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>
+                            {% endif %}
+                        </section>
+
+                        {% include post_pagination.html %}
+                    </div>
+                </article>
+
                 <div>
-                    {{ assignment.content }}
+                    {% assign assignment_posts = site.posts | where: "categories", "Assignment" %}
+                    {% for assignment in assignment_posts %}
+                    <article>
+                        <div>
+                            {{ assignment.content }}
+                        </div>
+                    </article>
+                    <hr>
+                    {% endfor %}
                 </div>
-            </article>
-            <hr>
-            {% endfor %}
-            
-        </div>
-
+            </div>
+        </section>
     </div>
-
 </div>
