@@ -98,7 +98,7 @@ defaults:
       type: posts
     values:
       layout: single
-      mathjax: true
+      use_math: true
       # author_profile: true
       # read_time: true
       # comments: true

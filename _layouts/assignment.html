@@ -10,95 +10,20 @@ permalink: /assignments/
         </picture>
         <h2>Assignments</h2>
     </div>
-    <div class="wrapper-as">
-        <h2>목차</h2>
-        <div class="chapter-as">
-            {% assign filtered_posts_1 = site.posts | where: "bigtitle", "제1장 컴퓨터 네트워크와 인터넷" %}
-            <h3>제1장 컴퓨터 네트워크와 인터넷</h3>
-            <div class="contents">
-                {% for post in filtered_posts_1 reversed %}
-                <a href="{{site.baseurl}}{{post.url}}" class="">
-                    <h4>{{post.title}}</h4>
-                </a>
-                {% endfor %}
-            </div>
+    <div class="wrapper">
+        <div class="markdown-body">
+            {% assign assignment_posts = site.posts | where: "categories", "Assignment" %}
+            {% for assignment in assignment_posts %}
+            <article>
+                <div>
+                    {{ assignment.content }}
+                </div>
+            </article>
+            <hr>
+            {% endfor %}
+            
         </div>
-        <div class="chapter-as">
-            {% assign filtered_posts_2 = site.posts | where: "bigtitle", "제2장 애플리케이션 계층" %}
-            <h3>제2장 애플리케이션 계층</h3>
-            <div class="contents">
-                {% for post in filtered_posts_2 reversed %}
-                <a href="{{site.baseurl}}{{post.url}}" class="">
-                    <h4>{{post.title}}</h4>
-                </a>
-                {% endfor %}
-            </div>
-        </div>
-        <div class="chapter-as">
-            {% assign filtered_posts_3 = site.posts | where: "bigtitle", "제3장 트랜스포트 계층" %}
-            <h3>제3장 트랜스포트 계층</h3>
-            <div class="contents">
-                {% for post in filtered_posts_3 reversed %}
-                <a href="{{site.baseurl}}{{post.url}}" class="">
-                    <h4>{{post.title}}</h4>
-                </a>
-                {% endfor %}
-            </div>
-        </div>
-        <div class="chapter-as">
-            {% assign filtered_posts_4 = site.posts | where: "bigtitle", "제4장 네트워크 계층: 데이터 평면" %}
-            <h3>제4장 네트워크 계층: 데이터 평면</h3>
-            <div class="contents">
-                {% for post in filtered_posts_4 reversed %}
-                <a href="{{site.baseurl}}{{post.url}}" class="">
-                    <h4>{{post.title}}</h4>
-                </a>
-                {% endfor %}
-            </div>
-        </div>
-        <div class="chapter-as">
-            {% assign filtered_posts_5 = site.posts | where: "bigtitle", "제5장 네트워크 계층: 제어 평면" %}
-            <h3>제5장 네트워크 계층: 제어 평면</h3>
-            <div class="contents">
-                {% for post in filtered_posts_5 reversed %}
-                <a href="{{site.baseurl}}{{post.url}}" class="">
-                    <h4>{{post.title}}</h4>
-                </a>
-                {% endfor %}
-            </div>
-        </div>
-        <div class="chapter-as">
-            {% assign filtered_posts_6 = site.posts | where: "bigtitle", "제6장 링크 계층과 근거리 네트워크" %}
-            <h3>제6장 링크 계층과 근거리 네트워크</h3>
-            <div class="contents">
-                {% for post in filtered_posts_6 reversed %}
-                <a href="{{site.baseurl}}{{post.url}}" class="">
-                    <h4>{{post.title}}</h4>
-                </a>
-                {% endfor %}
-            </div>
-        </div>
-        <div class="chapter-as">
-            {% assign filtered_posts_7 = site.posts | where: "bigtitle", "제7장 무선 및 이동 네트워크" %}
-            <h3>제7장 무선 및 이동 네트워크</h3>
-            <div class="contents">
-                {% for post in filtered_posts_7 reversed %}
-                <a href="{{site.baseurl}}{{post.url}}" class="">
-                    <h4>{{post.title}}</h4>
-                </a>
-                {% endfor %}
-            </div>
-        </div>
-        <div class="chapter-as">
-            {% assign filtered_posts_8 = site.posts | where: "bigtitle", "제8장 컴퓨터 네트워크 보안" %}
-            <h3>제8장 컴퓨터 네트워크 보안</h3>
-            <div class="contents">
-                {% for post in filtered_posts_8 reversed %}
-                <a href="{{site.baseurl}}{{post.url}}" class="">
-                    <h4>{{post.title}}</h4>
-                </a>
-                {% endfor %}
-            </div>
-        </div>
+
     </div>
+
 </div>
