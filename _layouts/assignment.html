@@ -1,6 +1,5 @@
 ---
 layout: default
-permalink: /assignments/
 ---
 
 <div class="assignment">
@@ -25,20 +24,6 @@ permalink: /assignments/
                     {% endfor %}
                 </div>
             </div>
-            <section class="nav__right">
-                {% if assignment.toc %}
-                <aside class="sidebar__right {% if assignment.toc_sticky %}sticky{% endif %}">
-                  <nav class="toc">
-                    <header>
-                      <h4 class="nav__title"><i class="fas fa-{{ assignment.toc_icon | default: 'file-alt' }}"></i> {{
-                        assignment.toc_label
-                        | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4>
-                    </header>
-                    {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
-                  </nav>
-                </aside>
-                {% endif %}
-              </section>
         </section>
     </div>
 </div>
