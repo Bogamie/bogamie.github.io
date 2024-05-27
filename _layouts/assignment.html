@@ -11,19 +11,22 @@ layout: default
     </div>
     <div class="wrapper-as">
         <section class="post__content">
-            <div class="markdown-body">
-                <div>
-                    {% assign assignment_posts = site.posts | where: "categories", "Assignment" %}
-                    {% for assignment in assignment_posts %}
-                    <article>
-                        <div>
-                            {{ assignment.content }}
+            {% assign assignment = site.posts | where: "categories", "Assignment" %}
+            {% for post in assignment reversed %}
+            <div class="accordion">
+                <li class="link">
+                    <div class="assignment__dropdown">
+                        {{post.title}}
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+                    <ul class="assignment__submenuItems">
+                        <div class="markdown-body">
+                            {{ post.content }}
                         </div>
-                    </article>
-                    <hr>
-                    {% endfor %}
-                </div>
+                    </ul>
+                </li>
             </div>
+            {% endfor %}
         </section>
     </div>
 </div>
