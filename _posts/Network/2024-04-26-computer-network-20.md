@@ -137,7 +137,7 @@ TCP는 다음과 같은 3가지 처리 원칙에 따라 자신이 송신할 속�
 
 ### TCP 혼잡 제어의 FSM
 
-<!-- <p align="center"><img width="780" alt="TCP 혼잡 제어의 FSM" src="https://user-images.githubusercontent.com/86337233/211625829-2117ddf7-f325-4168-86cb-39d6bac3e2bd.png") -->
+![image](https://github.com/Bogamie/bogamie.github.io/assets/162293185/8d17b72f-09f0-4ec1-8e88-245077faefdb){: height="80%" width="80%"}
 
 <br/>
 <br/>
@@ -159,7 +159,7 @@ TCP는 다음과 같은 3가지 처리 원칙에 따라 자신이 송신할 속�
 
 아래 그림처럼 TCP 전송률은 지수적으로 증가하게 된다.
 
-<!-- <p align="center"><img width="380" alt="TCP 슬로 스타트" src="https://user-images.githubusercontent.com/86337233/211625835-f36ebe84-04de-4091-86a2-fcedfb50fe4f.png") -->
+![image](https://github.com/Bogamie/bogamie.github.io/assets/162293185/21fa7b5b-a117-4d05-aeaa-eeb015c80655){: height="80%" width="80%"}
 
 <br/>
 <br/>
@@ -269,7 +269,7 @@ TCP 혼잡 회피 알고리즘은 **타임아웃**이 발생했을 때 슬로 �
 
 <br/>
 
-<!-- <p align="center"><img width="500" alt="TCP의 혼잡 윈도의 발달" src="https://user-images.githubusercontent.com/86337233/211625839-e0b75f39-a78a-4265-aad1-b9382257e8de.png") -->
+![image](https://github.com/Bogamie/bogamie.github.io/assets/162293185/f7b34558-ace4-4b97-929e-1985c148a1fa){: height="80%" width="80%"}
 
 <br/>
 <br/>
@@ -307,7 +307,7 @@ TCP 혼잡 회피 알고리즘은 **타임아웃**이 발생했을 때 슬로 �
 
 <br/>
 
-<!-- <p align="center"><img width="500" alt="AIMD 혼잡 제어" src="https://user-images.githubusercontent.com/86337233/211625842-798c4c59-a967-4847-b29f-4e4a3ebfcc32.png") -->
+![image](https://github.com/Bogamie/bogamie.github.io/assets/162293185/4ddf4492-a3c4-4748-8c1e-5af522cd368d){: height="80%" width="80%"}
 
 <br/>
 
@@ -350,28 +350,6 @@ ACK 수신 시에만 혼잡 윈도를 늘리고 슬로 스타트 단계와 빠�
 - `t가 K를 크게 초과함`**에 따라 혼잡 윈도가 급격히 증가한다.**
 
 <br/>
-
----
-
-<br/>
-
-아래 그래프는 `TCP 리노`와 `TCP 큐빅`의 이상적인 성능 비교를 나타낸 것이다.
-
-<br/>
-
-<!-- <p align="center"><img width="500" alt="TCP 리노와 TCP 큐빅" src="https://user-images.githubusercontent.com/86337233/211625843-6a80951a-f492-41bc-9cf2-635b8159ce7b.jpg"> -->
-
-<br/>
-<br/>
-
-슬로 스타트 단계는 `t0`에서 끝나며,  
-`t1`, `t2`, `t3`에서 혼잡 손실이 발생하면 큐빅은 `Wmax`**에 가깝게 더 빠르게 증가한다.**
-
-→ 따라서 TCP 큐빅이 더 많은 전체 처리량을 누린다.
-
-TCP 큐빅은 혼잡 임곗값 바로 아래에서 가능한 한 오랫동안 흐름을 유지하려고 시도한다.
-
-<br/>
 <br/>
 
 ## 3. 네트워크 지원 명시적 혼잡 알림과 지연 기반 혼잡 제어
@@ -397,7 +375,7 @@ IP 및 TCP에 대한 확장이 제안, 구현 및 배포되었다. (`네트워�
 
 <br/>
 
-<!-- <p align="center"><img width="600" alt="명시적 혼잡 알림" src="https://user-images.githubusercontent.com/86337233/211625847-eee59d74-7fa9-4570-adf2-2d007837b231.png") -->
+![image](https://github.com/Bogamie/bogamie.github.io/assets/162293185/3116250c-5368-4dae-b8f7-86c5449a08e2){: height="80%" width="80%"}
 
 <br/>
 <br/>
@@ -487,7 +465,7 @@ ECN 비트의 두 번째 설정은 발신 호스트가 라우터에게 다음의
 
 <br/>
 
-<!-- <p align="center"><img width="570" alt="병목 링크" src="https://user-images.githubusercontent.com/86337233/211625853-ca717317-75e6-47ec-ac70-971a8f475fcf.png") -->
+![image](https://github.com/Bogamie/bogamie.github.io/assets/162293185/a87d5f23-3f39-4b8e-90c9-a8c1e2d4b0df){: height="80%" width="80%"}
 
 <br/>
 <br/>
@@ -506,7 +484,7 @@ TCP 연결 1과 2에 의해 실현되는 처리율은 다음과 같이 나타낼
 
 <br/>
 
-<!-- <p align="center"><img width="360" alt="처리율" src="https://user-images.githubusercontent.com/86337233/211625855-65fb1a01-7341-46a3-85d6-1e38f5e0be51.png") -->
+![image](https://github.com/Bogamie/bogamie.github.io/assets/162293185/302d55ef-4c3a-48d9-affe-66eab322f7dc){: height="80%" width="80%"}
 
 <br/>
 <br/>
