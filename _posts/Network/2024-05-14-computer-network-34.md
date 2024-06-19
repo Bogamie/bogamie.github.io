@@ -64,10 +64,6 @@ e.g. 호스트, 라우터, 스위치, AP(access point, 7장에서 설명) 등
 
 호스트에서 대부분의 경우 링크 계층은 `네트워크 인터페이스 컨트롤러(network interface controller, NIC)`로 알려진 `네트워크 어댑터(network adapter)` 에 구현된다.
 
-(라우터에서는 4장에서 봤듯이 라인 카드에 구현된다.)
-
-<p align="center"><img width="400" alt="네트워크 어댑터" src="https://user-images.githubusercontent.com/76640167/214023089-1ac99788-3cb3-461c-96df-e507f658a255.png">
-
 <br/>
 
 ### 컨트롤러(controller)

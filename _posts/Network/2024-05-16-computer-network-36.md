@@ -26,12 +26,6 @@ last_modified_at: 2024-05-16
 
 <br/>
 
-**다양한 다중 접속 채널**
-
-<p align="center"><img width="300" alt="다중 접속 링크" src="https://user-images.githubusercontent.com/76640167/214252181-cbe924c1-ba6e-4194-bb26-cb62090a1d55.png">
-
-<br/>
-
 **다중 접속 문제(multiple access problem)**
 
 모든 노드가 프레임을 전송할 수 있으므로 2개 이상의 노드가 브로드캐스트 채널에서 직접 통신할 수 있고, 이런 일이 발생하면 **모든 노드는 동시에 여러 개의 프레임을 받게 된다.**
@@ -55,8 +49,6 @@ last_modified_at: 2024-05-16
 <br/>
 
 ## 1. 채널 분할 프로토콜
-
-<p align="center"><img width="300" alt="TDM FDM" src="https://user-images.githubusercontent.com/76640167/214252177-bf3b863e-80dd-4ae6-a463-0c2c67af4e4e.png">
 
 ### 시분할 다중화(time-division multiplexing, TDM)
 

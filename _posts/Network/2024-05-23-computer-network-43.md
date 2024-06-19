@@ -25,11 +25,6 @@ last_modified_at: 2024-05-23
 
 ### IEEE 802.11 표준안
 
-<p align="center"><img width="600" alt="IEEE 802 11 표준 요약" src="https://user-images.githubusercontent.com/86337233/216346578-d86272d3-836a-45f4-8708-a840c9774c4a.png">
-
-<br/>
-<br/>
-
 #### 802.11b, g, n, ac, ax 표준
 
 - 일반적으로 거리가 70m 미만인 영역에서 동작하는 WLAN 용도
