@@ -1,12 +1,26 @@
-# Welcome to Jekyll!
-#
+title: Blog
+email: bogamie02@gmail.com
+description: ""
+baseurl: ""
+url: ""
+github_username: bogamie
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
+
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
 # yourself editing this file very often, consider using Jekyll's data files
 # feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
 # If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
@@ -18,91 +32,22 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 보겸's
-subtitle: Blog
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-bg-url: "assets/images/background2.webp"
-profile-url: "/assets/images/proImg.webp"
-twitter_username: jekyllrb
-github_username:  jekyll
-
-sass:
-  sass_dir: _sass
-  style: compressed
-
-include:
-  - _pages
-exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - vendor
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
-  - CHANGELOG
-  - config
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
-  - node_modules
-  - package.json
-  - package-lock.json
-  - Rakefile
-  - README
-  - tmp
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
-# Markdown Processing
-kramdown:
-input: GFM
-hard_wrap: false
-auto_ids: true
-footnote_nr: 1
-entity_output: as_char
-toc_levels: 1..6
-smart_quotes: lsquo,rsquo,ldquo,rdquo
-enable_coderay: false
-plugins:
-  - jekyll-purgecss
-
-css_dir: "assets/css" # defaults to "css"
-
-
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      use_math: true
-      # author_profile: true
-      # read_time: true
-      # comments: true
-      # share: true
-      related: true
-      # sidebar_main: true
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
