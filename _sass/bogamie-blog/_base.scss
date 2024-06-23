@@ -1,4 +1,6 @@
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 html {
   /* apply a natural box layout model to all elements */
@@ -22,4 +24,7 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
-body { margin: 0; }
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}

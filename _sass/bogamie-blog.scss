@@ -1,6 +1,6 @@
 @import "bogamie-blog/variable";
 @import "bogamie-blog/mixins";
 @import "bogamie-blog/breakpoint";
-
+@include breakpoint-set("to ems", true);
 @import "bogamie-blog/base";
 @import "bogamie-blog/masthead";
