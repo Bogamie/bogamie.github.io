@@ -1,48 +1,13 @@
-// .masthead {
-//     position: relative;
-
-//     &__inner-wrap {
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-between;
-//         height: 60px;
-//         padding: 0 30px;
-//     }
-
-//     a {
-//         color: $text-color;
-//         text-decoration: none;
-//     }
-
-//     .site-title {
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         height: 100%;
-//         color: $text-color;
-//         font-size: 1.25em;
-//         font-weight: 900;
-//     }
-// }
-
-// .masthead__menu-items {
-//     display: flex;
-// }
-
-// .nav-item {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     height: 100%;
-//     font-size: 0.75em;
-//     font-weight: 800;
-// }
-
 .masthead {
-    position: relative;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
     background-color: transparent;
+    backdrop-filter: blur(16px);
 
     &__inner-wrap {
+        position: relative;
         align-items: center;
         display: flex;
         height: 60px;
@@ -50,10 +15,17 @@
         padding: 0 30px;
     }
 
+    &.stickyHead {
+        background-color: $background-color;
+        transition: all 0.5s ease-in-out;
+    }
+
     a {
         color: $text-color;
         text-decoration: none;
     }
+
+
 }
 
 .site-title {
@@ -69,6 +41,7 @@
     display: flex;
     height: 100%;
 }
+
 .nav-item {
     font-size: 0.75em;
     font-weight: 800;

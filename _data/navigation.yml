@@ -1,14 +1,3 @@
-# main links
-main:
-  - title: "Home"
-    url: /
-  - title: "About"
-    url: /about/
-  - title: "Posts"
-    url: /posts/
-  - title: "Projects"
-    url: /projects/
-
 social:
   - icon: "fab fa-fw fa-instagram"
     url: "https://www.instagram.com/bok_yeom"
