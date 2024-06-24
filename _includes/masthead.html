@@ -1,14 +1,20 @@
-    <a href="{{ site.url }}" class="logo">{{ site.title }} <spam> {{ site.subtitle }} </spam></a>
-
-    <ul class="navbar">
-        {% for link in site.data.navigation.main %}
-        <li>
-            <a href="{{ link.url | relative.url}}">{{ link.title }}</a>
-        </li>
-        {% endfor %}
-    </ul>
-    <div class="h-right">
-        {% for social in site.data.navigation.social %}
-        <a href="{{ social.url }}"><i class="{{social.icon}}"></i></a>
-        {% endfor %}
+<div class="masthead">
+    <div class="masthead__inner-wrap">
+        <a href="{{ site.url }}" class="site-title">{{ site.title }}</a>
+        <nav class="masthead__menu">
+            <div class="nav__inner-wrap">
+                <a href="/" class="nav-item">Home</a>
+            </div>
+            <div class="nav__inner-wrap">
+                <a href="/about/" class="nav-item">About</a>
+            </div>
+            <div class="nav__inner-wrap">
+                <a href="/posts/" class="nav-item">Posts</a>
+            </div>
+            <div class="nav__inner-wrap">
+                <a href="/projects/" class="nav-item">Projects</a>
+            </div>
+            <span class="nav-indicator"></span>
+        </nav>
     </div>
+</div>

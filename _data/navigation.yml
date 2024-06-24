@@ -1,19 +1,7 @@
-# main links
-main:
-  - title: "Home"
-    url: /
-  - title: "About"
-    url: /about/
-  - title: "Category"
-    url: /categories/
-  - title: "Assignment"
-    url: /assignments/
-
 social:
-  - icon: "ri-instagram-fill"
+  - icon: "fab fa-fw fa-instagram"
     url: "https://www.instagram.com/bok_yeom"
-  - icon: "ri-google-fill"
+  - icon: "fas fa-fw fa-envelope-square"
     url: "mailto:bogamie02@gmail.com"
-  - icon: "ri-github-fill"
+  - icon: "fab fa-fw fa-github"
     url: "https://github.com/Bogamie"
-    

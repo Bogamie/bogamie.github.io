@@ -1,0 +1,80 @@
+.masthead {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: transparent;
+    backdrop-filter: blur(16px);
+
+    &__inner-wrap {
+        position: relative;
+        align-items: center;
+        display: flex;
+        height: 60px;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
+    &.stickyHead {
+        background-color: $background-color;
+        transition: all 0.5s ease-in-out;
+    }
+
+    a {
+        color: $text-color;
+        text-decoration: none;
+    }
+
+
+}
+
+.site-title {
+    font-size: 1.25em;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.masthead__menu {
+    display: flex;
+    height: 100%;
+}
+
+.nav__inner-wrap {
+    display: flex;
+    padding: 0 0 0 30px;
+}
+
+.nav-item {
+    font-size: 0.75em;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.nav-item:not(.is-active):hover { color: #333; transition: $global-transition;}
+
+.nav-indicator {
+    position: absolute;
+    top: 0px;
+    background-color: black;
+    height: 3px;
+    border-radius: 0 0 16px 16px;
+    transition: all 0.6s ease-in-out;
+    animation: fadeInDown 0.3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeInDown {
+    0% {
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        transform: translateZ(0);
+    }
+}

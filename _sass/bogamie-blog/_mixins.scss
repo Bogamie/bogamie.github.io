@@ -1,0 +1,13 @@
+@function em($target, $context: $doc-font-size) {
+  @return ($target / $context) * 1em;
+}
+
+@mixin clearfix {
+  clear: both;
+
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
