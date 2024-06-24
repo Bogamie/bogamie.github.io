@@ -42,29 +42,39 @@
     height: 100%;
 }
 
+.nav__inner-wrap {
+    display: flex;
+    padding: 0 0 0 30px;
+}
+
 .nav-item {
     font-size: 0.75em;
     font-weight: 800;
-    padding: 0 0 0 30px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+
+
+.nav-item:not(.is-active):hover { color: #333; transition: $global-transition;}
+
 .nav-indicator {
     position: absolute;
-    top: 0;
+    top: 0px;
     background-color: black;
     height: 3px;
-    border-radius: 0 0 4px 4px;
-    animation: fadeInDown 1s;
+    border-radius: 0 0 16px 16px;
+    transition: all 0.6s ease-in-out;
+    animation: fadeInDown 0.3s;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes fadeInDown {
     0% {
         transform: translate3d(0, -100%, 0);
     }
-    to {
+    100% {
         transform: translateZ(0);
     }
 }

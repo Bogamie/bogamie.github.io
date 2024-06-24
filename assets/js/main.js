@@ -20,8 +20,8 @@ function updateIndicator() {
 
     if (activeNavItem) {
         setTimeout(() => {
-            indicator.style.width = `${activeNavItem.offsetWidth - 30}px`;
-            indicator.style.left = `${activeNavItem.offsetLeft + 30}px`;
+            indicator.style.width = `${activeNavItem.offsetWidth}px`;
+            indicator.style.left = `${activeNavItem.offsetLeft}px`;
         }, 100);
     }
 }
