@@ -57,4 +57,14 @@
     background-color: black;
     height: 3px;
     border-radius: 0 0 4px 4px;
+    animation: fadeInDown 1s;
+}
+
+@keyframes fadeInDown {
+    0% {
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        transform: translateZ(0);
+    }
 }
