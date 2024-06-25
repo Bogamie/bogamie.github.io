@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "유니티 C# 기본 문법 정리"
+date:   2024-06-25 19:45:40 +0900
+categories: Unity
+
+published: false
+---
+
+## 1. 변수
+
+```c#
+int num = 5;            // 정수
+float strength = 0.25f; // 실수
+string name = "홍길동"; // 문자열
+bool flag = true;       // Boolean
+```
+
+`float` 타입의 리터럴을 정의할 때는 값 뒤에 `f` 또는 `F`를 붙여줘야 한다.
+
+## 2. 배열
+
+```c#
+string[] players = { "홍길동", "철수", "영희" };
+int[] playerLevel = new int[3];
+
+for (int i = 0; i < players.Length; i++) {
+  playerLevel[i] = 4 * (i + 1);
+}
+
+for (int i = 0; i < players.Length; i++) {
+  Debug.Log(players[i] + "레벨: " + playerLevel[i]);
+}
+```
+
+**결과화면**
+
+```
+홍길동레벨: 4
+철수레벨: 8
+영희레벨: 12
+```
