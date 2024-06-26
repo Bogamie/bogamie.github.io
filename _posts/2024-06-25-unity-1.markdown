@@ -40,3 +40,13 @@ for (int i = 0; i < players.Length; i++) {
 철수레벨: 8
 영희레벨: 12
 ```
+
+## 3. 리스트
+
+### 선언
+
+```c#
+List<string> items = new List<string>();
+```
+
+### 

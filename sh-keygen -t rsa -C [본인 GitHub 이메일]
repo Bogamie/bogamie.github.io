@@ -1,0 +1,319 @@
+[33mcommit 74023bfadb310e9146c1d866b77b20f94922bf55[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Tue Jun 25 23:32:33 2024 +0900
+
+    Style: Update design elements
+
+[33mcommit 3ba6a7fe6a47a40868820f825433f8f7e023c880[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Mon Jun 24 23:43:21 2024 +0900
+
+    Fix: Build error
+
+[33mcommit 568ffdd1f5bb63cba725f62dd87b046662144e40[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Mon Jun 24 22:59:48 2024 +0900
+
+    Fix: Build error
+
+[33mcommit faf42ef0503f1fce341f633b0e783ede8e859707[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Mon Jun 24 22:51:38 2024 +0900
+
+    Fix: Build Error
+
+[33mcommit 01c50ef7da03e86d4e333133aa4ddd7bfe242977[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Mon Jun 24 22:43:29 2024 +0900
+
+    Fix: Install missing gems
+
+[33mcommit 0ee897f50ed01bcab699342f284690dd8947267b[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Mon Jun 24 22:34:44 2024 +0900
+
+    Fix: Build error
+
+[33mcommit a9abb0753d2085d61db8fdf39adeee2405ed7434[m
+Merge: 8e380b7 a0f6f2c
+Author: Bogamie <162293185+Bogamie@users.noreply.github.com>
+Date:   Mon Jun 24 19:23:50 2024 +0900
+
+    Merge pull request #3 from Bogamie/overturn
+    
+    Test:
+
+[33mcommit a0f6f2c74d1c18768a62fd11e143082a510a46df[m[33m ([m[1;31morigin/overturn[m[33m)[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Mon Jun 24 18:27:44 2024 +0900
+
+    Test:
+
+[33mcommit 8e380b79cb26acf6f323dadbfe5e7530b6e6b34c[m
+Merge: 3674066 8465fbe
+Author: Bogamie <162293185+Bogamie@users.noreply.github.com>
+Date:   Mon Jun 24 18:08:11 2024 +0900
+
+    Merge pull request #2 from Bogamie/overturn
+    
+    Blog redesign
+
+[33mcommit 8465fbecfb3349e1603c8cf515ed78182e53c45f[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Mon Jun 24 17:17:41 2024 +0900
+
+    Feat: Add main page
+
+[33mcommit d4688557e8cccd9905eb70cbe1f87bcaa130b5ea[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Mon Jun 24 11:21:47 2024 +0900
+
+    Fix: Indicator not positioned correctly
+
+[33mcommit 120cc5afe5c5459f1003e70701e2a7beb085c0fd[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Sun Jun 23 23:49:39 2024 +0900
+
+    Fix: Resolve header not staying fixed at the top
+
+[33mcommit 48bbc89f9c52abe26e771cdf2c91389ff2349b9d[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Sun Jun 23 23:29:26 2024 +0900
+
+    Feat: Add a dynamic header for displaying the page
+
+[33mcommit 2dfb64310e30b984cf64b25d5c5db358da3de211[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Sun Jun 23 00:33:08 2024 +0900
+
+    Feat: Completely overhaul the design and structure
+
+[33mcommit 3674066995e13ac4701608c9035c406c39ae6601[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Wed Jun 19 20:05:51 2024 +0900
+
+    0.5.3
+
+[33mcommit 9af68ac40f48f2fef2cda1cf79cf1d1a1d75090b[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Wed Jun 19 19:58:47 2024 +0900
+
+    0.5.2
+
+[33mcommit 87414d9dc440fb12fc7b9e21a74b1c2468add2d3[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Wed Jun 19 17:12:06 2024 +0900
+
+    0.5.1
+
+[33mcommit d49a2f0dac7c3305d57ba2c74ca9de2ab96a620e[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Wed Jun 19 17:03:59 2024 +0900
+
+    0.5.0
+
+[33mcommit a1e28410047732c76b192c01e15c3553065e73eb[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Mon Jun 17 22:50:22 2024 +0900
+
+    0.4.9
+
+[33mcommit 14c199569cb6ebbc114fc685e19f095471a6bfc5[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Mon Jun 17 21:49:06 2024 +0900
+
+    0.4.8
+
+[33mcommit c8f61170e2774fb606fa78acfc3d578e685f5acb[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Sun Jun 16 15:13:53 2024 +0900
+
+    0.4.7
+
+[33mcommit 3637f55a70a61719a2139ef7b4804ca526218702[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Tue May 28 17:43:28 2024 +0900
+
+    0.4.6
+
+[33mcommit fe4750492281a93c201c516fa84bcb4051f55044[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Tue May 28 09:05:16 2024 +0900
+
+    0.4.5
+
+[33mcommit b927ca3a33e31a3facf611fdb7bcd0676808cf91[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Tue May 28 08:53:48 2024 +0900
+
+    0.4.4
+
+[33mcommit 6a355588eec912d848c5259b29aa0afb09b07914[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Tue May 28 00:07:45 2024 +0900
+
+    0.4.3
+
+[33mcommit 983e80cd7814de435f2dc65724c3755a820296e7[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Mon May 27 23:58:05 2024 +0900
+
+    0.4.2
+
+[33mcommit 112db0e6148c352ef7e35e8feb710bfa23031f55[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Mon May 27 23:49:34 2024 +0900
+
+    0.4.1
+
+[33mcommit 62847dfae5d66eb1fee5800760f4ad31ec06f30c[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Mon May 27 23:39:50 2024 +0900
+
+    0.4.0
+
+[33mcommit 24aeab35d9642a77f45869f958d8bc102944f115[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Mon May 27 16:26:19 2024 +0900
+
+    0.3.9
+
+[33mcommit b6ea9d518b65a82c563a8e86e31711309c17fc85[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Sun May 26 22:31:10 2024 +0900
+
+    0.3.8
+
+[33mcommit ae7d20f6f4c42817f78a6f7a97f3c150a992a4ad[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Sun May 26 21:07:54 2024 +0900
+
+    0.3.7
+
+[33mcommit 5b96a150aeb10818a6d3d918f8ae61582dfa93b3[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Sun May 26 19:26:07 2024 +0900
+
+    0.3.6
+
+[33mcommit a95879201b6948990cddb2b4a8e583def3694e4e[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Sun May 19 20:33:56 2024 +0900
+
+    0.3.5
+
+[33mcommit 5646e5e0f0ae95e93664e3138cfeab47bd06a890[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Sun May 19 17:47:40 2024 +0900
+
+    0.3.4
+
+[33mcommit 712efb2d4af9270fe95658ce32b52a40ef6de6fe[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Tue May 7 18:57:45 2024 +0900
+
+    0.3.3
+
+[33mcommit e375f3b9a47547eec6385ff90c78f18a029a6562[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Tue May 7 11:44:07 2024 +0900
+
+    0.3.2
+
+[33mcommit 325c92a42c11f376fd172ac5309487054de3bdb0[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Tue May 7 11:41:32 2024 +0900
+
+    0.3.1
+
+[33mcommit 8a25851e0be83f878c261a5a3daf580975008823[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Tue May 7 11:32:54 2024 +0900
+
+    0.3.0
+
+[33mcommit 21f94f57825d2792a10328a96dfd55575661a839[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Tue May 7 10:02:51 2024 +0900
+
+    0.2.9
+
+[33mcommit 7250182773353215b55daacd0da2cc109f2601af[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Tue May 7 09:26:47 2024 +0900
+
+    0.2.8
+
+[33mcommit 1a89a5c8f0dd3ad0f5a383ad36d81cc3caa5ed9d[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Tue May 7 09:21:27 2024 +0900
+
+    0.2.7
+
+[33mcommit eebe1fb37c5704ecb61f214166a98221ad5851e2[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Sat May 4 23:59:40 2024 +0900
+
+    0.2.6
+
+[33mcommit 4aa113d3e3abb26fc041b292a35f34aca38980cd[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Sat May 4 23:28:01 2024 +0900
+
+    0.2.5
+
+[33mcommit a42f28dd0d1b8c8a4a46ffdfe1b5e4d2fc2b98cb[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Sat May 4 22:50:27 2024 +0900
+
+    0.2.4
+
+[33mcommit 7dff419c50e086abd80679d522efa693e8e047dd[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Sat May 4 19:47:01 2024 +0900
+
+    0.2.3
+
+[33mcommit dc5ec2904df14228a5462a57e78790b807e6365d[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Sat May 4 19:33:48 2024 +0900
+
+    0.2.2
+
+[33mcommit 744010ae75c22e5cca1a616efa138cf21beb2b06[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Sat May 4 18:32:52 2024 +0900
+
+    0.2.1
+
+[33mcommit dea5f5a2c3435f2998d2398f182a36b427e1c461[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Sat May 4 18:25:12 2024 +0900
+
+    0.2.0
+
+[33mcommit df53017e33605001410e7caacfc88aefbffeab10[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Thu May 2 01:54:02 2024 +0900
+
+    0.1.9
+
+[33mcommit 5caafa3b540d03e5051206446a2be61e265f8650[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Thu Apr 11 09:02:41 2024 +0900
+
+    0.1.8
+
+[33mcommit 178fb48204f2cbb2cfc5927e6dc30d471144cc12[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Thu Apr 11 01:15:31 2024 +0900
+
+    0.1.7
+
+[33mcommit 0b4c0d45de65e4f3afba1f94fec4bfb6a03dc985[m
+Author: Bogamie <bogamie02@gmail.com>
+Date:   Wed Apr 10 17:15:11 2024 +0900
+
+    0.1.6
+
+[33mcommit d9422d
