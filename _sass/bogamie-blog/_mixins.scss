@@ -1,5 +1,5 @@
 @function em($target, $context: $doc-font-size) {
-  @return math.div($target, $context) * 1em;
+  @return ($target / $context) * 1em;
 }
 
 @mixin clearfix {
