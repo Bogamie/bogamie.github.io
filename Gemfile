@@ -1,17 +1,16 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3.3"
-gem "minima", "~> 2.5"
+gem 'jekyll', '~> 4.3', '>= 4.3.3'
 
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
+  gem 'jekyll-feed', '~> 0.17.0'
   gem 'jekyll-paginate', '~> 1.1'
   gem 'jekyll-sitemap', '~> 1.4'
   gem 'jekyll-gist', '~> 1.5'
   gem 'jemoji', '~> 0.13.0'
   gem 'jekyll-include-cache', '~> 0.2.1'
-  gem 'csv'
-  gem 'faraday-retry'
+  gem 'csv', '~> 3.3'
+  gem 'faraday-retry', '~> 2.2', '>= 2.2.1'
 end
 
 # Hello! This is where you manage which Jekyll version is used to run.
