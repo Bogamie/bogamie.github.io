@@ -1,0 +1,52 @@
+---
+title:  "MRTK3"
+date:   2024-07-14 20:12:40 +0900
+categories: Unity
+
+published: false
+---
+
+## 1. Scene
+
+
+```
+📦 Packages
+└─ MRTK Input
+   ├─ Assets
+   │  └─ Prefabs
+   │     └─ MRTK XR Rig
+   └─ Simulation
+      └─ Prefabs
+         └─ MRTKInputSimulator
+```
+
+&nbsp;&nbsp;새로운 씬을 생성 후 기본 생성된 Main Camera는 제거해준다. MRTK3에서 제공하는 프리팹 MRTK XR Rig, MRTKInputSimulator를 추가해준다.
+
+**결과 화면**
+
+![image](https://github.com/user-attachments/assets/98a7ca32-7047-4738-9697-583d055fc0f5){: height="80%" width="80%"}
+
+## 2. UI Panel
+
+&nbsp;&nbsp;이제 UI를 만들어보자. 먼저 Hierachy 창의 + 버튼을 눌러 Create Empty를 생성한다. 이것은 UI 구성요소들을 하나로 묶어 redrawing을 줄여 성능 향상을 도모하기 위함이다. Inspector 창에서 Transform의 요소들을 초기화해주자.
+
+![image](https://github.com/user-attachments/assets/c25cc12f-8236-43d5-99dd-c047c1c2dcc3){: height="80%" width="80%"}
+&nbsp;&nbsp;이름을 UI Root로 설정하였다.
+
+<br>
+
+&nbsp;&nbsp;캔버스를 만들어보자. UI Root에 UI Canvas를 생성한다(UI - Canvas). 이름은 Canvs Root로 하였다. 
+
+&nbsp;&nbsp;Inspector에서 Canvas의 Render Mode를 World Space로 변경한 후 Rect Transform을 초기화한다. Scale은 xyz 값 모두 0.001로 설정한다.
+
+![image](https://github.com/user-attachments/assets/6d5ea1a6-0567-4605-8b1a-a837129e5dd4){: height="80%" width="80%"}
+
+## 3. Nav Bar
+
+&nbsp;&nbsp;Create Empty로 `LeftNav`를 생성 후 Vertical Layout Group을 추가한다. Vertical Layout Group에서 Child Force Expand의 체크 표시를 모두 해제한다.
+
+![image](https://github.com/user-attachments/assets/0be518c3-58c5-4304-b10a-3f1d652c5940){: height="80%" width="80%"}
+
+&nbsp;&nbsp;LeftNav에 UI - MRTK - Action Button으로 버튼을 추가한다.
+
+![image](https://github.com/user-attachments/assets/a220ccf3-35d3-4ee4-94b7-4fc9752fad70){: height="80%" width="80%"}

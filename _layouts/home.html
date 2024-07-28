@@ -12,7 +12,7 @@ layout: default
             <a href="{{ recentPost.url }}" class="recent-post__wrap {{ post_classes[forloop.index0] }}">
                 <div class="post-info">
                     <div class="recent-post__meta">
-                        {{ recentPost.categories | join: ", " }} · {{ recentPost.date | date: "%B %d, %Y" }}
+                        {{ recentPost.categories[0] }} · {{ recentPost.date | date: "%B %d, %Y" }}
                     </div>
                     <div class="recent-post__title">{{ recentPost.title }}</div>
                 </div>

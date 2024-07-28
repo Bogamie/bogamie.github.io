@@ -10,6 +10,8 @@ group :jekyll_plugins do
   gem 'jekyll-gist', '~> 1.5'
   gem 'jemoji', '~> 0.13.0'
   gem 'jekyll-include-cache', '~> 0.2.1'
+  gem 'csv'
+  gem 'faraday-retry'
 end
 
 # Hello! This is where you manage which Jekyll version is used to run.

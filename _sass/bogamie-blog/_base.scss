@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+
 html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;
@@ -27,5 +35,8 @@ html {
 body {
   margin: 0;
   padding: 60px 8vw 0;
-  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.highlighter-rouge .highlight {
+  border-radius: 16px !important;
 }
