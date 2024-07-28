@@ -6,8 +6,6 @@ url: ""
 github_username: bogamie
 
 # Build settings
-plugins:
-  - jekyll-include-cache
 sass:
   sass_dir: _sass
   style: compressed
