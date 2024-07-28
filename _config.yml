@@ -6,6 +6,13 @@ url: ""
 github_username: bogamie
 
 # Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jemoji
+  - jekyll-include-cache
 sass:
   sass_dir: _sass
   style: compressed
