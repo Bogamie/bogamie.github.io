@@ -16,12 +16,12 @@
     }
 
     &.stickyHead {
-        background-color: $background-color;
-        transition: all 0.5s ease-in-out;
+        background-color: $--base-color;
+        transition: all 0.3s ease-in-out;
     }
 
     a {
-        color: $text-color;
+        color: $--text-color;
         text-decoration: none;
     }
 

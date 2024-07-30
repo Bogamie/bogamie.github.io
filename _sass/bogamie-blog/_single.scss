@@ -1,36 +1,77 @@
-.highlighter-rouge .highlight {
-    background-color: #fff;
-    border-radius: 16px !important;
-    font-family: 'D2Coding', sans-serif;
-}
-
 .page__section {
     display: flex;
+    gap: 16px;
     flex-direction: row;
 }
-.main__content {
-    flex: 1;
-}
+
 :target:before {
     content: "";
     display: block;
-    height: 60px;
-    margin-top: -60px;
+    height: 70px;
+    margin-top: -70px;
     visibility: hidden;
-  }
-
-.page__nav {
-    // width: 250px; /* TOC의 너비를 조정 */
-    padding-right: 16px;
-    // flex-shrink: 0; /* TOC의 너비를 고정 */
 }
 
-.page__sidebr.sticky {
-    position: sticky;
-    top: 60px; /* 스크롤 시 TOC가 상단에 고정되도록 */
+.page__nav {
+    width: 20%;
 }
 
 .main__content {
+    width: 80%;
+}
+.page__sidebar {
+    padding: 0.25rem 0.75rem;
+    max-height: calc(100vh - 76px);
+    min-width: 100%;
+    flex-shrink: 0;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: auto;   
+    border-radius: 12px;
+    background-color: $--base-bright;
+
+    &.sticky {
+        position: sticky;
+        top: 60px;
+    }
+
+    a {
+        color: $--text-color;
+        text-decoration-line: none;
+        display: block;
+
+        &:hover {
+            color: var(--main-color);
+            transition: all .20s ease;
+        }
+    }
+
+    ul,
+    li {
+        padding-left: 0;
+        list-style-type: none;
+        
+    }li ul > li {
+        position: relative; /* 가상 요소를 올바르게 배치하기 위해 relative 포지셔닝 사용 */
+        padding-left: 1rem; /* 텍스트와 세로줄을 함께 왼쪽으로 이동 */
+    }
+    
+    li ul > li:before {
+        content: '';
+        position: absolute;
+        left: 0.25rem; /* 세로줄이 패딩 시작 부분에 위치 */
+        top: 0px;
+        bottom: -4px; /* 세로줄이 리스트 아이템의 전체 높이를 채우도록 설정 */
+        width: 1px; /* 세로줄의 두께 */
+        background-color: $--base-variant; /* 세로줄 색상 */
+    }
+}
+
+.main__content {
+    background-color: $--base-bright;
+    padding: 0 1rem;
+    border-radius: 16px;
+    
     .page__title {
         border-bottom: 0 !important;
     }

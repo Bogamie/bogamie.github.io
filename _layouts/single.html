@@ -5,7 +5,7 @@ layout: default
 	<div class="page__section">
 		<section class="page__nav">
 			{% if page.toc %}
-			<aside class="page__sidebr {% if page.toc_sticky %}sticky{% endif %}">
+			<aside class="page__sidebar {% if page.toc_sticky %}sticky{% endif %}">
 				<nav class="toc">
 					<header>
 						<h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{
@@ -24,7 +24,7 @@ layout: default
 					{{ page.title }}
 				</h1>
 			</div>
-			{{ content }}
+				{{ content }}
 		</section>
 	</div>
 </article>

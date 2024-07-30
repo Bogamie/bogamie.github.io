@@ -1,13 +1,13 @@
 /* Light mode */
 .markdown-body {
     --md-body-background:#fcfdfb;
-    --md-body-color:#254440;
+    --md-body-color:#254440; /* 글자 색상 */
     --md-color-dark:#1b1f23;
-    --md-block-bg:#f6f8fa;
+    --md-block-bg:#f6f8fa; /* 코드 블록 색상 */
     --md-block-color:#24292f;
-    --md-border-color:#e1e4e8;
-    --md-code:#eff1f2; /* inline code */
-    --md-block-quote:#58606a;
+    --md-border-color:#e1e4e8; /* 선 색상 */
+    --md-code:#eff1f2; /* inline code `` 색상 */
+    --md-block-quote:#58606a; 
 }
 
 /* Dark mode */
@@ -24,7 +24,7 @@
     }
 }
 
-.highlighter-rouge .highlight {border-radius:3px; overflow:hidden;}
+.highlighter-rouge .highlight {border-radius:16px; overflow-x: auto;}
 .highlight {background:var(--md-block-bg); color:var(--md-block-color);}
 
 .markdown-body {
