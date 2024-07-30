@@ -16,6 +16,7 @@
 }
 .section-title {
     font-size: 2.25em;
+    color: var(--text-color);
     font-weight: 700;
     text-align: center;
 }
@@ -39,10 +40,10 @@
     &__meta {
         font-size: 0.75em;
         font-weight: 400;
-        color: $--base-color;
+        color: var(--secondary-text);
     }
     &__title {
-        color: $--base-color;
+        color: var(--text-color);
         font-size: 1em;
         font-weight: 500;
         margin-top: auto;

@@ -5,7 +5,6 @@
     width: 100%;
     background-color: transparent;
     backdrop-filter: blur(16px);
-
     &__inner-wrap {
         position: relative;
         align-items: center;
@@ -14,20 +13,15 @@
         justify-content: space-between;
         padding: 0 30px;
     }
-
     &.stickyHead {
-        background-color: $--base-color;
+        background-color: var(--base-color);
         transition: all 0.3s ease-in-out;
     }
-
     a {
-        color: $--text-color;
+        color: var(--text-color);
         text-decoration: none;
     }
-
-
 }
-
 .site-title {
     font-size: 1.25em;
     font-weight: 900;
@@ -36,12 +30,10 @@
     justify-content: center;
     height: 100%;
 }
-
 .masthead__menu {
     display: flex;
     height: 100%;
 }
-
 .nav__inner-wrap {
     display: flex;
     padding: 0 0 0 30px;
@@ -55,14 +47,12 @@
     justify-content: center;
 }
 
-
-
 .nav-item:not(.is-active):hover { color: #333; transition: $global-transition;}
 
 .nav-indicator {
     position: absolute;
     top: 0px;
-    background-color: black;
+    background-color: var(--secondary-text);
     height: 3px;
     border-radius: 0 0 16px 16px;
     transition: all 0.6s ease-in-out;

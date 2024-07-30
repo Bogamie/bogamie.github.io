@@ -5,6 +5,27 @@
 :root {
   font-family: Inter, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+
+  /* light mode */
+  --base-color: #fbfbfb;
+  --base-variant: #f2f2f2;
+  --base-bright: #ffffff;
+  --text-color: #111528;
+  --secondary-text: #232728;
+  --primary-color: #3a435d;
+  --accent-color: #0071ff;
+
+ 
+}
+.darkmode {
+  /* dark mode */
+  --base-color: #040404;
+  --base-variant: #0e0e0e;
+  --base-bright: #000000;
+  --text-color: #fafafa;
+  --secondary-text: #eeeeee;
+  --primary-color: #a9b5d9;
+  --accent-color: #0071ff;
 }
 @supports (font-variation-settings: normal) {
   :root { font-family: InterVariable, sans-serif; }
@@ -13,7 +34,7 @@
 html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;
-  background-color: $--base-color;
+  background-color: var(--base-color);
   font-size: 16px;
 
   @include breakpoint($medium) {

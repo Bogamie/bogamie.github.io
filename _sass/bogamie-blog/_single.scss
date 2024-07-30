@@ -28,7 +28,7 @@
     scrollbar-width: none;
     overflow-y: auto;   
     border-radius: 12px;
-    background-color: $--base-bright;
+    background-color: var(--base-bright);
 
     &.sticky {
         position: sticky;
@@ -36,7 +36,7 @@
     }
 
     a {
-        color: $--text-color;
+        color: var(--text-color);
         text-decoration-line: none;
         display: block;
 
@@ -63,12 +63,12 @@
         top: 0px;
         bottom: -4px; /* 세로줄이 리스트 아이템의 전체 높이를 채우도록 설정 */
         width: 1px; /* 세로줄의 두께 */
-        background-color: $--base-variant; /* 세로줄 색상 */
+        background-color: var(--base-variant); /* 세로줄 색상 */
     }
 }
 
 .main__content {
-    background-color: $--base-bright;
+    background-color: var(--base-bright);
     padding: 0 1rem;
     border-radius: 16px;
     
