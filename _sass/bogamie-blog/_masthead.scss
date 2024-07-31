@@ -22,6 +22,11 @@
         text-decoration: none;
     }
 }
+.masthead__title {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
 .site-title {
     font-size: 1.25em;
     font-weight: 900;
