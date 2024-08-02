@@ -22,6 +22,28 @@
         text-decoration: none;
     }
 }
+
+#theme-switch {
+    padding: 0;
+    border: #ffffff;
+    border-radius: 100%;
+    width: 28px;
+    height: 28px;
+    // background-color: var(--base-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg:last-child {
+        display: none;
+    }
+}
+.darkmode #theme-switch svg:first-child {
+    display: none;
+}
+.darkmode #theme-switch svg:last-child {
+    display: block;
+}
 .masthead__title {
     display: flex;
     flex-direction: row;

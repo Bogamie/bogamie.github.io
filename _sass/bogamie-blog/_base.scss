@@ -15,15 +15,13 @@
   --third-text: #ffffff;
   --primary-color: #3a435d;
   --accent-color: #0071ff;
-
- 
 }
 .darkmode {
   /* dark mode */
   --base-color: #040404;
   --base-variant: #0e0e0e;
-  --base-bright: #000000;
-  --text-color: #fafafa;
+  --base-bright: #111111;
+  --text-color: #e7e7e7;
   --secondary-text: #eeeeee;
   --third-text: #0e0e0e;
   --primary-color: #a9b5d9;
@@ -36,7 +34,6 @@
 html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;
-  background-color: var(--base-color);
   font-size: 16px;
 
   @include breakpoint($medium) {
@@ -58,4 +55,5 @@ html {
 body {
   margin: 0;
   padding: 60px 8vw 0;
+  background-color: var(--base-color);
 }
