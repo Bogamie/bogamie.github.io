@@ -1,37 +1,37 @@
 /* Light mode */
 .markdown-body {
-    --md-body-background:#fcfdfb;
-    --md-body-color:#254440; /* 글자 색상 */
-    --md-color-dark:#1b1f23;
-    --md-block-bg:#f6f8fa; /* 코드 블록 색상 */
-    --md-block-color:#24292f;
-    --md-border-color:#e1e4e8; /* 선 색상 */
-    --md-code:#eff1f2; /* inline code `` 색상 */
-    --md-block-quote:#58606a; 
+    // --color-primary-100:#fcfdfb;
+    // --md-body-color:#254440; /* 글자 색상 */
+    // --md-color-dark:#1b1f23;
+    // --color-primary-300:#0a60b5; /* 코드 블록 색상 */
+    // --md-block-color:#c2d1e4;
+    // --color-primary-400:#e1e4e8; /* 선 색상 */
+    // --color-primary-300:#eff1f2; /* inline code `` 색상 */
+    // --md-block-quote:#58606a; 
 }
 
 /* Dark mode */
 @media (prefers-color-scheme:dark) {
     .markdown-body {
-        --md-body-background:#22272e;
-        --md-body-color:#adbac7;
-        --md-color-dark:#1b1f23;
-        --md-block-bg:#2d333b;
-        --md-block-color:#adbac7;
-        --md-border-color:#454c56;
-        --md-code:#434b55;
-        --md-block-quote:#768390;
+        // --color-primary-100:#22272e;
+        // --md-body-color:#adbac7;
+        // --md-color-dark:#1b1f23;
+        // --color-primary-300:#2d333b;
+        // --md-block-color:#adbac7;
+        // --color-primary-400:#454c56;
+        // --color-primary-300:#434b55;
+        // --md-block-quote:#768390;
     }
 }
 
 .highlighter-rouge .highlight {border-radius:16px; overflow-x: auto;}
-.highlight {background:var(--md-block-bg); color:var(--md-block-color);}
+.highlight {background-color:var(--color-primary-300); color:var(--color-primary-300);}
 
 .markdown-body {
     -ms-text-size-adjust:100%;
     -webkit-text-size-adjust:100%;
     line-height:1.5;
-    color:var(--md-body-color);
+    color:var(--text-primary-200); // 글자 색
     font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
     font-size:16px;
     word-wrap:break-word;
@@ -60,7 +60,7 @@
 .markdown-body h4 .octicon-link,
 .markdown-body h5 .octicon-link,
 .markdown-body h6 .octicon-link {
-    color:var(--md-color-dark);
+    color:var(--text-primary-200);
     vertical-align:middle;
     visibility:hidden;
 }
@@ -173,7 +173,7 @@
     overflow:hidden;
     background:transparent;
     border:0;
-    border-bottom:1px solid var(--md-border-color);
+    border-bottom:1px solid var(--color-primary-400);
 }
 
 .markdown-body hr:after,
@@ -306,7 +306,7 @@
 }
 
 .markdown-body .border {
-    border:1px solid var(--md-border-color) !important;
+    border:1px solid var(--color-primary-400) !important;
 }
 
 .markdown-body .border-0 {
@@ -314,7 +314,7 @@
 }
 
 .markdown-body .border-bottom {
-    border-bottom:1px solid var(--md-border-color) !important;
+    border-bottom:1px solid var(--color-primary-400) !important;
 }
 
 .markdown-body .rounded-1 {
@@ -499,7 +499,7 @@
 }
 
 .markdown-body .pl-mi2 {
-    color:var(--md-block-bg);
+    color:var(--color-primary-300);
     background-color:#005cc5;
 }
 
@@ -651,14 +651,14 @@
     height:.25em;
     padding:0;
     margin:24px 0;
-    background-color:var(--md-border-color);
+    background-color:var(--color-primary-400);
     border:0;
 }
 
 .markdown-body blockquote {
     padding:0 1em;
     /* color:#212830; */
-    border-left:.25em solid var(--md-border-color);
+    border-left:.25em solid var(--color-primary-400);
 }
 
 .markdown-body blockquote > :first-child {
@@ -688,7 +688,7 @@
 .markdown-body h1,
 .markdown-body h2 {
     padding-bottom:.3em;
-    border-bottom:1px solid var(--md-border-color);
+    border-bottom:1px solid var(--color-primary-400);
 }
 
 .markdown-body h2 {
@@ -767,16 +767,16 @@
 .markdown-body table td,
 .markdown-body table th {
     padding:6px 13px;
-    border:1px solid var(--md-border-color);
+    border:1px solid var(--color-primary-400);
 }
 
 .markdown-body table tr {
-    background-color:var(--md-body-background); color:var(--md-block-color);
-    border-top:1px solid var(--md-border-color);
+    background-color:var(--color-primary-100); color:var(--md-block-color);
+    border-top:1px solid var(--color-primary-400);
 }
 
 .markdown-body table tr:nth-child(2n) {
-    background-color:var(--md-block-bg);
+    background-color:var(--color-primary-300);
 }
 
 .markdown-body img {
@@ -797,7 +797,7 @@
     padding:.2em .4em;
     margin:0;
     font-size:85%;
-    background-color:var(--md-code);
+    background-color:var(--color-primary-300);
     border-radius:3px;
 }
 
@@ -830,7 +830,7 @@
     overflow:auto;
     font-size:85%;
     line-height:1.45;
-    background-color:var(--md-block-bg);
+    background-color:var(--color-primary-300);
     border-radius:3px;
 }
 
@@ -876,7 +876,7 @@
     font-family:SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
     font-size:12px;
     line-height:20px;
-    color:rgba(27, 31, 35, .3);
+    color:rgba(27, 31, 35, 0.3);
     text-align:right;
     white-space:nowrap;
     vertical-align:top;
@@ -888,7 +888,7 @@
 }
 
 .markdown-body .blob-num:hover {
-    color:rgba(27, 31, 35, .6);
+    color:#1b1f2399;
 }
 
 .markdown-body .blob-num:before {

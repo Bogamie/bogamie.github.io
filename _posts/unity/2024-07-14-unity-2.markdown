@@ -3,7 +3,8 @@ title:  "MRTK3"
 date:   2024-07-14 20:12:40 +0900
 categories: Unity
 
-published: false
+permalink: posts/MRTK3
+published: true
 ---
 
 ## 1. Scene

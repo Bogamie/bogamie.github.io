@@ -4,10 +4,29 @@
 
 :root {
   font-family: Inter, sans-serif;
-  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  font-feature-settings: 'liga' 1, 'calt' 1;
+  /* fix for Chrome */
 
   /* light mode */
-  --base-color: #fbfbfb;
+  /** CSS LIGHT THEME PRIMARY COLORS */
+  --color-primary-100: #ffffff; /* 밝은 흰색 */
+  --color-primary-200: #f8f8f8; /* 거의 흰색 */
+  --color-primary-300: #f0f0f0; /* 매우 밝은 회색 */
+  --color-primary-400: #e8e8e8; /* 밝은 회색 */
+  --color-primary-500: #e0e0e0; /* 연한 회색 */
+  --color-primary-600: #d8d8d8; /* 조금 더 어두운 회색 */
+
+  /** CSS LIGHT THEME TEXT COLORS */
+  --text-primary-100: #121212;
+  --text-primary-200: #282828;
+  --text-primary-300: #3f3f3f;
+  --text-primary-400: #575757;
+  --text-primary-500: #717171;
+  --text-primary-600: #8b8b8b;
+
+  --md-block-color: #c2d1e4;
+
+  --base-color: #f2f2f2;
   --base-variant: #f2f2f2;
   --base-bright: #ffffff;
   --text-color: #111528;
@@ -16,19 +35,41 @@
   --primary-color: #3a435d;
   --accent-color: #0071ff;
 }
+
 .darkmode {
   /* dark mode */
-  --base-color: #040404;
-  --base-variant: #0e0e0e;
-  --base-bright: #111111;
-  --text-color: #e7e7e7;
-  --secondary-text: #eeeeee;
-  --third-text: #0e0e0e;
-  --primary-color: #a9b5d9;
+  /** CSS DARK THEME PRIMARY COLORS */
+  --color-primary-100: #121212; /* 가장 어두운 색 */
+  --color-primary-200: #1c1c1c; /* 조금 밝은 어두운 색 */
+  --color-primary-300: #262626; /* 더 밝은 어두운 색 */
+  --color-primary-400: #303030; /* 중간 어두운 색 */
+  --color-primary-500: #3a3a3a; /* 더 밝은 중간 어두운 색 */
+  --color-primary-600: #444444; /* 가장 밝은 어두운 색 */
+
+  --text-primary-100: #ffffff;
+  --text-primary-200: #e0e0e0;
+  --text-primary-300: #c0c0c0;
+  --text-primary-400: #a0a0a0;
+  --text-primary-500: #808080;
+  --text-primary-600: #606060;
+
+  --md-block-color: #adbac7;
+
+  --base-color: #121212;
+  --base-variant: #8f4444;
+  --base-bright: #282828;
+  --text-color: #42833b;
+  --secondary-text: #2c385b;
+  --third-text: #511cff;
+  --primary-color: #ff05e6;
   --accent-color: #0071ff;
 }
+
+
 @supports (font-variation-settings: normal) {
-  :root { font-family: InterVariable, sans-serif; }
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
 }
 
 html {
@@ -55,5 +96,5 @@ html {
 body {
   margin: 0;
   padding: 60px 8vw 0;
-  background-color: var(--base-color);
+  background-color: var(--color-primary-100);
 }

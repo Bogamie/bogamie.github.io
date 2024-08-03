@@ -10,7 +10,7 @@ function updateIndicator() {
     navItems.forEach(navItem => {
         const navLinkPathName = new URL(navItem.href).pathname;
 
-        if ((windowPathName === navLinkPathName) || (navLinkPathName === '/')) {
+        if (windowPathName === navLinkPathName) {
             navItem.classList.add('active');
             activeNavItem = navItem;
         } else {

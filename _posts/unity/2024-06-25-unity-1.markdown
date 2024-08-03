@@ -3,6 +3,7 @@ title:  "유니티 C# 기본 문법 정리"
 date:   2024-06-25 19:45:40 +0900
 categories: Unity
 
+permalink: posts/유니티-기본-문법-정리
 published: true
 ---
 
