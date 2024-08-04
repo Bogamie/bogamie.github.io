@@ -5,7 +5,15 @@
 <html lang="ko">
 <head>
     {% include head.html %}
-    {% include head/fabicon.html %}
+    <!-- {% include head/fabicon.html %} -->
+    <script>
+        (function() {
+            const darkmode = localStorage.getItem('darkmode');
+            if (darkmode === 'active') {
+                document.documentElement.classList.add('darkmode');
+            }
+        })();
+    </script>
 </head>
 <body>
     {% include_cached masthead.html %}
