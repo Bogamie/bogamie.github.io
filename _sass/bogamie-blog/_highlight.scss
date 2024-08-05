@@ -1,0 +1,117 @@
+/*!
+  Theme: Github
+  Author: Defman21
+  License: ~ MIT (or more permissive) [via base16-schemes-source]
+  Maintainer: @highlightjs/core-team
+  Version: 2021.09.0
+*/
+pre code.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 1em
+}
+
+code.hljs {
+    padding: 3px 5px
+}
+
+.hljs {
+    color: var(--text-primary-200);
+    background: #fff
+}
+
+.hljs ::selection,
+.hljs::selection {
+  background-color: var(--hljs-sel-bg);
+  color: var(--hljs-sel-color);
+}
+
+.hljs-comment {
+  color: var(--hljs-com);
+}
+
+.hljs-tag {
+  color: var(--hljs-tag);
+}
+
+.hljs-operator,
+.hljs-punctuation,
+.hljs-subst {
+  color: var(--hljs-op-punc-subst);
+}
+
+.hljs-operator {
+  opacity: var(--hljs-op-opacity);
+}
+
+.hljs-bullet,
+.hljs-deletion,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-template-variable,
+.hljs-variable {
+  color: var(--hljs-bul-del-name-var);
+}
+
+.hljs-attr,
+.hljs-link,
+.hljs-literal,
+.hljs-number,
+.hljs-symbol,
+.hljs-variable.constant_ {
+  color: var(--hljs-attr-link-lit-num);
+}
+
+.hljs-class .hljs-title,
+.hljs-title,
+.hljs-title.class_ {
+  color: var(--hljs-class-title);
+}
+
+.hljs-strong {
+  font-weight: 700;
+  color: var(--hljs-strong);
+}
+
+.hljs-addition,
+.hljs-built_in,
+.hljs-code,
+.hljs-doctag,
+.hljs-keyword.hljs-atrule,
+.hljs-quote,
+.hljs-regexp,
+.hljs-string,
+.hljs-title.class_.inherited__ {
+  color: var(--hljs-add-builtin-kw-str);
+}
+
+.hljs-attribute,
+.hljs-function .hljs-title,
+.hljs-section,
+.hljs-title.function_,
+.ruby .hljs-property {
+  color: var(--hljs-attr-func-sec);
+}
+
+.diff .hljs-meta,
+.hljs-keyword,
+.hljs-template-tag,
+.hljs-type {
+  color: var(--hljs-meta-key-temp-type);
+}
+
+.hljs-emphasis {
+  color: var(--hljs-emph);
+  font-style: italic;
+}
+
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+.hljs-meta .hljs-string {
+  color: var(--hljs-meta);
+}
+
+.hljs-meta .hljs-keyword,
+.hljs-meta-keyword {
+    font-weight: 700
+}

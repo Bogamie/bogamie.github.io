@@ -18,6 +18,13 @@
 
 .main__content {
     width: 80%;
+    background-color: var(--color-primary-200);
+    padding: 0 1rem;
+    border-radius: 16px;
+
+    .page__title {
+        border-bottom: 0 !important;
+    }
 }
 .page__sidebar {
     padding: 0.25rem 0.75rem;
@@ -67,12 +74,6 @@
     }
 }
 
-.main__content {
-    background-color: var(--color-primary-200);
-    padding: 0 1rem;
-    border-radius: 16px;
-    
-    .page__title {
-        border-bottom: 0 !important;
-    }
+.sized__box{
+    height: 240px;
 }

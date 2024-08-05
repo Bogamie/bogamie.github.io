@@ -1,31 +1,31 @@
 ---
 layout: default
 ---
-	<article class="markdown-body">
-		<div class="page__section">
-			<section class="page__nav">
-				{% if page.toc %}
-				<aside class="page__sidebar {% if page.toc_sticky %}sticky{% endif %}">
-					<nav class="toc">
-						<header>
-							<h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{
-								page.toc_label
-								| default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4>
-						</header>
-						{% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
-					</nav>
-				</aside>
-				{% endif %}
-			</section>
-	
-			<section class="main__content">
-				<div class="post__info">
-					<h1 class="page__title">
-						{{ page.title }}
-					</h1>
-				</div>
-					{{ content }}
-			</section>
-		</div>
-	</article>
+<article class="markdown-body">
+	<div class="page__section">
+		<section class="page__nav">
+			{% if page.toc %}
+			<aside class="page__sidebar {% if page.toc_sticky %}sticky{% endif %}">
+				<nav class="toc">
+					<header>
+						<h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{
+							page.toc_label
+							| default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4>
+					</header>
+					{% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
+				</nav>
+			</aside>
+			{% endif %}
+		</section>
 
+		<section class="main__content">
+			<div class="post__info">
+				<h1 class="page__title">
+					{{ page.title }}
+				</h1>
+			</div>
+			{{ content }}
+		</section>
+	</div>
+	<div class="sized__box"></div>
+</article>
