@@ -5,7 +5,7 @@
     width: 100%;
     background-color: transparent;
     backdrop-filter: blur(16px);
-
+    z-index: 100;
     &__inner-wrap {
         position: relative;
         align-items: center;
