@@ -19,7 +19,8 @@
 .main__content {
     width: 80%;
     background-color: var(--color-primary-200);
-    padding: 0 1rem;
+        transition: background-color 0.3s ease;
+        padding: 0 1rem;
     border-radius: 16px;
 
     .page__title {
@@ -36,6 +37,7 @@
     overflow-y: auto;   
     border-radius: 12px;
     background-color: var(--color-primary-200);
+    transition: background-color 0.3s ease;
 
     &.sticky {
         position: sticky;
@@ -71,6 +73,7 @@
         bottom: -4px; /* 세로줄이 리스트 아이템의 전체 높이를 채우도록 설정 */
         width: 1px; /* 세로줄의 두께 */
         background-color: var(--color-primary-400); /* 세로줄 색상 */
+        transition: background-color 0.3s ease;
     }
 }
 
