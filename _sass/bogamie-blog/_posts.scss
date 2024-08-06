@@ -1,0 +1,17 @@
+.post__nav {
+    grid-area: 1 / 1 / 2 / 4;
+    // background-color: rgba(58,112,173);
+}
+
+.post__wrapper {
+    grid-area: 1 / 4 / 2 / 13;
+	// background-color: rgba(21,206,115);
+}
+
+.post-item {
+    display: none;
+}
+
+.post-item.visible {
+    display: block;
+}
