@@ -12,16 +12,17 @@
 }
 
 .page-header {
-    padding-top: 7vh;
-    padding-bottom: 7vh;
+    padding: 0.5vh 0;
 }
 
 .section-title {
+    padding: 6.5vh 0;
     font-size: 2.25em;
     color: var(--text-primary-100);
     font-weight: 700;
-    text-align: center;
+    text-align: center;    
 }
+
 
 .post-info {
     padding: 1em;

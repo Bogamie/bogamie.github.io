@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<article class="markdown-body">
-	<div class="page__section">
+	<article class="markdown-body">
+		<div class="default__design">
 		<section class="page__nav">
 			{% if page.toc %}
 			<aside class="page__sidebar {% if page.toc_sticky %}sticky{% endif %}">
@@ -12,7 +12,8 @@ layout: default
 							page.toc_label
 							| default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4>
 					</header>
-					{% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
+					{% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu"
+					skip_no_ids=true %}
 				</nav>
 			</aside>
 			{% endif %}
@@ -26,6 +27,6 @@ layout: default
 			</div>
 			{{ content }}
 		</section>
-	</div>
-	<div class="sized__box"></div>
+		<div class="sized__box"></div>
+</div>
 </article>

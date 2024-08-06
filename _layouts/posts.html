@@ -2,36 +2,8 @@
 layout: default
 ---
 <main>
-  <section class="recent-posts">
-      <header class="page-header">
-          <h1 class="section-title">Recent Posts</h1>
-      </header>
-      <div class="recent-posts__list">
-          {% assign post_classes = "recent-post1,recent-post2,recent-post3" | split: "," %}
-          {% for recentPost in site.posts limit: 3 %}
-          <a href="{{ recentPost.url }}" class="recent-post__wrap {{ post_classes[forloop.index0] }}">
-              <div class="post-info">
-                  <div class="recent-post__meta">
-                      {{ recentPost.categories[0] }} · {{ recentPost.date | date: "%B %d, %Y" }}
-                  </div>
-                  <div class="recent-post__title">{{ recentPost.title }}</div>
-              </div>
-          </a>
-          {% endfor %}
-      </div>
-      <!-- <div class="recent-posts__list">
-          {% assign post_classes = "recent-post1,recent-post2,recent-post3" | split: "," %}
-          {% for recentPost in site.posts limit: 3 %}
-          <div class="recent-post__wrap {{ post_classes[forloop.index0] }}">
-              <div class="post-info">
-                  <div class="recent-post__meta">
-                      {{ recentPost.categories | join: ", " }} · {{ recentPost.date | date: "%B %d, %Y" }}
-                  </div>
-                      <a href="{{ recentPost.url }}" class="recent-post__link">{{ recentPost.title }}</a>
-              </div>
-          </div>
-          {% endfor %}
-      </div> -->
+  <section class="post__section">
+
   </section>
 </main>
 {% for post in site.posts reversed %}

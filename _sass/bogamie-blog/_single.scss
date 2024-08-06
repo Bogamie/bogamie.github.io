@@ -1,9 +1,3 @@
-.page__section {
-    display: flex;
-    gap: 16px;
-    flex-direction: row;
-}
-
 :target:before {
     content: "";
     display: block;
@@ -13,29 +7,30 @@
 }
 
 .page__nav {
-    width: 20%;
+    grid-area: 1 / 1 / 2 / 3;
 }
 
 .main__content {
-    width: 80%;
+    grid-area: 1 / 3 / 2 / 13;
     background-color: var(--color-primary-200);
-        transition: background-color 0.3s ease;
-        padding: 0 1rem;
+    transition: background-color 0.3s ease;
+    padding: 0 1rem;
     border-radius: 16px;
 
     .page__title {
         border-bottom: 0 !important;
     }
 }
+
 .page__sidebar {
     padding: 0.25rem 0.75rem;
-    max-height: calc(100vh - 76px);
+    max-height: calc(100vh - 86px);
     min-width: 100%;
     flex-shrink: 0;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    overflow-y: auto;   
-    border-radius: 12px;
+    overflow-y: auto;
+    border-radius: 16px;
     background-color: var(--color-primary-200);
     transition: background-color 0.3s ease;
 
@@ -45,9 +40,10 @@
     }
 
     a {
-        color: var(--text-primary-300);
+        color: var(--text-primary-100);
         text-decoration-line: none;
         display: block;
+        font-weight: 600;
 
         &:hover {
             color: var(--text-primary-600);
@@ -59,24 +55,52 @@
     li {
         padding-left: 0;
         list-style-type: none;
-        
-    }li ul > li {
-        position: relative; /* 가상 요소를 올바르게 배치하기 위해 relative 포지셔닝 사용 */
-        padding-left: 1rem; /* 텍스트와 세로줄을 함께 왼쪽으로 이동 */
+
     }
-    
-    li ul > li:before {
+
+    li ul>li {
+        position: relative;
+        /* 가상 요소를 올바르게 배치하기 위해 relative 포지셔닝 사용 */
+        padding-left: 1rem;
+        /* 텍스트와 세로줄을 함께 왼쪽으로 이동 */
+    }
+
+    li ul>li:before {
         content: '';
         position: absolute;
-        left: 0.25rem; /* 세로줄이 패딩 시작 부분에 위치 */
+        left: 0.25rem;
         top: 0px;
-        bottom: -4px; /* 세로줄이 리스트 아이템의 전체 높이를 채우도록 설정 */
-        width: 1px; /* 세로줄의 두께 */
-        background-color: var(--color-primary-400); /* 세로줄 색상 */
+        bottom: -4px;
+        width: 1px;
+        background-color: var(--color-primary-400);
         transition: background-color 0.3s ease;
     }
+    li ul>li a {
+        color: var(--text-primary-200);
+        font-weight: 500;
+      }
+    
+      li ul li ul>li a {
+        color: var(--text-primary-300);
+        font-weight: 400;
+      }
+    
+      li ul li ul li ul>li a {
+        color: var(--text-primary-400);
+        font-weight: 300;
+      }
+    
+      li ul li ul li ul li ul>li a {
+        color: var(--text-primary-500);
+        font-weight: 200;
+      }
+    
+      li ul li ul li ul li ul li ul>li a {
+        color: var(--text-primary-600);
+        font-weight: 100;
+      }
 }
 
-.sized__box{
-    height: 16px;
+.sized__box {
+    height: 24px;
 }

@@ -117,3 +117,9 @@ body {
   background-color: var(--color-primary-100);
   transition: background-color 0.3s ease;
 }
+
+.default__design {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+}
