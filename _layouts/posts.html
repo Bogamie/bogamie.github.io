@@ -1,27 +1,83 @@
 ---
 layout: default
 ---
+{% assign cs_list = "Data Structure,Algorithm,Computer Architecture" | split: "," %}
+{% assign system_list = "System Programming,Computer Network" | split: "," %}
+{% assign design_list = "Database,Design Pattern" | split: "," %}
+{% assign web_list = "Web Programming" | split: "," %}
+
+{% assign sum = site.posts | size %}
+
 <section class="default__design">
   <nav class="post__nav">
+
+    <!-- Page Title -->
+    <div class="post__nav title">
+      Categories
+    </div>
+
     <div class="categories-list">
-      <div class="category-item" data-category="all">
-        <a href="javascript:void(0);">All</a>
-      </div>
-      {% assign unique_categories = "" | split: "" %}
-      {% for post in site.posts %}
-        {% for category in post.categories %}
-          {% unless unique_categories contains category %}
-            {% assign unique_categories = unique_categories | push: category %}
-          {% endunless %}
+      <!-- All Categories -->
+      <a href="javascript:void(0);">
+        <div class="category-item" data-category="all">
+          <div class="title__design">
+            <span>📂 All</span>
+            <span>[{{ sum }}]</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Computer Science Categories -->
+      <div class="category__wrapper">
+        <div class="category__title">Computer Science</div>
+        {% for category in cs_list %}
+        <a href="javascript:void(0);">
+          <div class="category-item" data-category="{{ category | downcase | replace: ' ', '-' }}">
+            <span>{{ category }} {{ category.size }}</span>
+          </div>
+        </a>
         {% endfor %}
-      {% endfor %}
-      {% for category in unique_categories %}
-      <div class="category-item" data-category="{{ category | downcase | replace: ' ', '-' }}">
-        <a href="javascript:void(0);">{{ category }}</a>
       </div>
-      {% endfor %}
+
+      <!-- Systems Categories -->
+      <div class="category__wrapper">
+        <div class="category__title">Systems</div>
+        {% for category in system_list %}
+        <a href="javascript:void(0);">
+          <div class="category-item" data-category="{{ category | downcase | replace: ' ', '-' }}">
+            <span>{{ category }}</span>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+
+      <!-- Data & Design Categories -->
+      <div class="category__wrapper">
+        <div class="category__title">Data & Design</div>
+        {% for category in design_list %}
+        <a href="javascript:void(0);">
+          <div class="category-item" data-category="{{ category | downcase | replace: ' ', '-' }}">
+            <span>{{ category }}</span>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+
+      <!-- Web Development Categories -->
+      <div class="category__wrapper">
+        <div class="category__title">Web Development</div>
+        {% for category in web_list %}
+        <a href="javascript:void(0);">
+          <div class="category-item" data-category="{{ category | downcase | replace: ' ', '-' }}">
+            <span>{{ category }}</span>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
     </div>
   </nav>
+
+  <!-- Posts Wrapper -->
   <div class="post__wrapper">
     {% for post in site.posts %}
     <div class="post-item" data-category="{{ post.categories | join: ' ' | downcase | replace: ' ', '-' }}">
@@ -31,3 +87,5 @@ layout: default
     {% endfor %}
   </div>
 </section>
+
+<script src="/assets/js/category.js"></script>
