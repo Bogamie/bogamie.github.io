@@ -85,7 +85,7 @@
     justify-content: center;
 }
 
-.nav-item:not(.is-active):hover {
+.nav-item:not(.masthead-active):hover {
     color: var(--text-primary-400);
     transition: $global-transition;
 }

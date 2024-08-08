@@ -6,69 +6,67 @@ layout: default
 {% assign design_list = "Database,Design Pattern" | split: "," %}
 {% assign web_list = "Web Programming" | split: "," %}
 
-{% assign sum = site.posts | size %}
-
 <section class="default__design">
   <nav class="post__nav">
-
     <!-- Page Title -->
     <div class="post__nav title">
       Categories
     </div>
 
-    <div class="categories-list">
-      <!-- All Categories -->
-      <a href="javascript:void(0);">
-        <div class="category-item" data-category="all">
-          <div class="title__design">
-            <span>📂 All</span>
-            <span>[{{ sum }}]</span>
-          </div>
+    <div class="post-nav__wrapper">
+      <!-- All -->
+      <a href="javascript:void(0);" class="category-item is-active" data-category="all">
+        <div class="post-nav__title">
+          <span>📒 All</span>
         </div>
       </a>
 
-      <!-- Computer Science Categories -->
+      <!-- Computer Science -->
       <div class="category__wrapper">
-        <div class="category__title">Computer Science</div>
+        <div class="post-nav__title">Computer Science</div>
         {% for category in cs_list %}
-        <a href="javascript:void(0);">
-          <div class="category-item" data-category="{{ category | downcase | replace: ' ', '-' }}">
-            <span>{{ category }} {{ category.size }}</span>
+        <a href="javascript:void(0);" class="category-item"
+          data-category="{{ category | downcase | replace: ' ', '-' }}">
+          <div class="post-nav__subtitle">
+            <span>{{ category }}</span>
           </div>
         </a>
         {% endfor %}
       </div>
 
-      <!-- Systems Categories -->
+      <!-- System -->
       <div class="category__wrapper">
-        <div class="category__title">Systems</div>
+        <div class="post-nav__title">Systems</div>
         {% for category in system_list %}
-        <a href="javascript:void(0);">
-          <div class="category-item" data-category="{{ category | downcase | replace: ' ', '-' }}">
+        <a href="javascript:void(0);" class="category-item"
+          data-category="{{ category | downcase | replace: ' ', '-' }}">
+          <div class="post-nav__subtitle">
             <span>{{ category }}</span>
           </div>
         </a>
         {% endfor %}
       </div>
 
-      <!-- Data & Design Categories -->
+      <!-- Data & Design -->
       <div class="category__wrapper">
-        <div class="category__title">Data & Design</div>
+        <div class="post-nav__title">Data & Design</div>
         {% for category in design_list %}
-        <a href="javascript:void(0);">
-          <div class="category-item" data-category="{{ category | downcase | replace: ' ', '-' }}">
+        <a href="javascript:void(0);" class="category-item"
+          data-category="{{ category | downcase | replace: ' ', '-' }}">
+          <div class="post-nav__subtitle">
             <span>{{ category }}</span>
           </div>
         </a>
         {% endfor %}
       </div>
 
-      <!-- Web Development Categories -->
+      <!-- Web Development -->
       <div class="category__wrapper">
-        <div class="category__title">Web Development</div>
-        {% for category in web_list %}
-        <a href="javascript:void(0);">
-          <div class="category-item" data-category="{{ category | downcase | replace: ' ', '-' }}">
+        <div class="post-nav__title">Web Development</div>
+        {% for category in design_list %}
+        <a href="javascript:void(0);" class="category-item"
+          data-category="{{ category | downcase | replace: ' ', '-' }}">
+          <div class="post-nav__subtitle">
             <span>{{ category }}</span>
           </div>
         </a>
@@ -76,7 +74,7 @@ layout: default
       </div>
     </div>
   </nav>
-
+ 
   <!-- Posts Wrapper -->
   <div class="post__wrapper">
     {% for post in site.posts %}

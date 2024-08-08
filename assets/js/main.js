@@ -11,10 +11,10 @@ function updateIndicator() {
         const navLinkPathName = new URL(navItem.href).pathname;
 
         if (windowPathName === navLinkPathName) {
-            navItem.classList.add('active');
+            navItem.classList.add('masthead-active');
             activeNavItem = navItem;
         } else {
-            navItem.classList.remove('active');
+            navItem.classList.remove('masthead-active');
         }
     });
 

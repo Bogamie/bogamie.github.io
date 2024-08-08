@@ -11,24 +11,47 @@
         color: var(--text-primary-100);
         padding-left: 1.25rem;
     }
-    .category__all {
-        background-color: aqua;
-    }
-    .category-item {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        background-color: var(--color-primary-300);
-    }
-    .title__design {
-        display: flex;
-        justify-content: space-between; /* 아이템들을 양 끝에 배치합니다 */
-        align-items: baseline;
-        width: 100%;
-      }
+
     a {
         color: var(--text-primary-100);
         text-decoration: none;
+    }
+}
+
+.category-item {
+    display: block;
+    padding: 10px 15px;
+    color: var(--text-primary-300);
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-item:not(.is-active):hover {
+    background-color: var(--color-primary-100);
+    color: var(--text-primary-100);
+}
+
+.category-item.is-active {
+    background-color: var(--color-primary-600);
+}
+.category-item .post-nav__subtitle {
+    font-weight: 500;
+}
+
+.category-item .post-nav__title {
+    font-weight: 700;
+}
+
+.post-nav {
+    &__title {
+        font-weight: 600;
+        color: var(--text-primary-200);
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        color: var(--text-primary-300);
+        padding-left: 0.25rem;
     }
 }
 
