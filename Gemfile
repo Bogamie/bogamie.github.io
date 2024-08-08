@@ -11,6 +11,7 @@ group :jekyll_plugins do
   gem 'jekyll-include-cache', '~> 0.2.1'
   gem 'csv', '~> 3.3'
   gem 'faraday-retry', '~> 2.2', '>= 2.2.1'
+  gem 'githubchart', '~> 4.0'
 end
 
 # Hello! This is where you manage which Jekyll version is used to run.

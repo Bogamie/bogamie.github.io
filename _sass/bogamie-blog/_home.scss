@@ -1,22 +1,25 @@
 .recent-posts {
-    display: block;
+    background-color:brown;
+    margin-top: 60px;
+    height: calc(100vh - 60px);
 
     &__list {
+        background-color: bisque;
         display: grid;
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns: repeat(12, 1fr);
         gap: 24px;
         width: 100%;
-        height: 55vh;
     }
 }
 
 .page-header {
-    padding: 0.5vh 0;
+    // padding: 0.5vh 0;
+    background-color: aqua;
 }
 
 .section-title {
-    padding: 6.5vh 0;
+    // padding: 6.5vh 0;
     font-size: 2.25em;
     color: var(--text-primary-100);
     font-weight: 700;
@@ -25,7 +28,7 @@
 
 
 .post-info {
-    padding: 1em;
+    // padding: 1em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -36,8 +39,6 @@
     &__wrap {
         border-radius: 16px;
         justify-content: space-between;
-        height: 100%;
-        display: flex;
         flex-direction: column;
         text-decoration: none;
     }
@@ -52,7 +53,7 @@
         color: var(--text-primary-300);
         font-size: 1em;
         font-weight: 500;
-        margin-top: auto;
+        // margin-top: auto;
     }
 }
 

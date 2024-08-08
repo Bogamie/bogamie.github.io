@@ -1,15 +1,24 @@
 .post__nav {
     grid-area: 1 / 1 / 2 / 3;
-    padding: 0.5rem 16px;
-    border-radius: 16px;
-    background-color: var(--color-primary-200);
     transition: background-color 0.3s ease;
 
+    &__wrapper {
+        background-color: var(--color-primary-200);
+        border-radius: 16px;
+        padding-bottom: 16px;
+
+        h4 {
+            padding: 1.33em;
+        }
+    }
+
+    h4 {
+        margin: 0;
+    }
+
     .title {
-        font-size: 1.25rem;
-        font-weight: 700;
+        font-weight: 600;
         color: var(--text-primary-100);
-        padding-left: 1.25rem;
     }
 
     a {
@@ -20,44 +29,48 @@
 
 .category-item {
     display: block;
-    padding: 10px 15px;
-    color: var(--text-primary-300);
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
-}
+    border-radius: 12px;
+    margin-top: 4px;
 
-.category-item:not(.is-active):hover {
-    background-color: var(--color-primary-100);
-    color: var(--text-primary-100);
-}
+    &:not(.is-active):hover {
+        color: var(--text-primary-100);
+        background-color: var(--color-primary-100);
+    }
 
-.category-item.is-active {
-    background-color: var(--color-primary-600);
-}
-.category-item .post-nav__subtitle {
-    font-weight: 500;
-}
+    &.is-active {
+        color: var(--text-primary-100);
+        background-color: var(--color-primary-400);
 
-.category-item .post-nav__title {
-    font-weight: 700;
+        .post-nav__subtitle {
+            color: var(--text-primary-100);
+        }
+    }
 }
 
 .post-nav {
     &__title {
         font-weight: 600;
-        color: var(--text-primary-200);
+        color: var(--text-primary-300);
+        padding: 8px 0; // 위 아래 , 좌 우
+    }
+
+    &__wrapper {
+        padding: 0 1rem;
     }
 
     &__subtitle {
+        color:  var(--text-primary-400);
         font-weight: 500;
-        color: var(--text-primary-300);
-        padding-left: 0.25rem;
+        padding: 8px 16px; // 위 아래 , 좌 우
     }
 }
 
 .post__wrapper {
     grid-area: 1 / 3 / 2 / 13;
     background-color: var(--color-primary-200);
+    height: auto;
 }
 
 .post-item {

@@ -8,73 +8,68 @@ layout: default
 
 <section class="default__design">
   <nav class="post__nav">
-    <!-- Page Title -->
-    <div class="post__nav title">
-      Categories
-    </div>
+    <div class="post__nav__wrapper">
+      <!-- Page Title -->
+      <h4 class="post__nav title">
+        📒 Categories
+      </h4>
 
-    <div class="post-nav__wrapper">
-      <!-- All -->
-      <a href="javascript:void(0);" class="category-item is-active" data-category="all">
-        <div class="post-nav__title">
-          <span>📒 All</span>
+      <div class="post-nav__wrapper">
+        <!-- Computer Science -->
+        <div class="category__wrapper">
+          <div class="post-nav__title">Computer Science</div>
+          {% for category in cs_list %}
+          <a href="javascript:void(0);" class="category-item"
+            data-category="{{ category | downcase | replace: ' ', '-' }}">
+            <div class="post-nav__subtitle">
+              <span>{{ category }}</span>
+            </div>
+          </a>
+          {% endfor %}
         </div>
-      </a>
 
-      <!-- Computer Science -->
-      <div class="category__wrapper">
-        <div class="post-nav__title">Computer Science</div>
-        {% for category in cs_list %}
-        <a href="javascript:void(0);" class="category-item"
-          data-category="{{ category | downcase | replace: ' ', '-' }}">
-          <div class="post-nav__subtitle">
-            <span>{{ category }}</span>
-          </div>
-        </a>
-        {% endfor %}
-      </div>
+        <!-- System -->
+        <div class="category__wrapper">
+          <div class="post-nav__title">Systems</div>
+          {% for category in system_list %}
+          <a href="javascript:void(0);" class="category-item"
+            data-category="{{ category | downcase | replace: ' ', '-' }}">
+            <div class="post-nav__subtitle">
+              <span>{{ category }}</span>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
 
-      <!-- System -->
-      <div class="category__wrapper">
-        <div class="post-nav__title">Systems</div>
-        {% for category in system_list %}
-        <a href="javascript:void(0);" class="category-item"
-          data-category="{{ category | downcase | replace: ' ', '-' }}">
-          <div class="post-nav__subtitle">
-            <span>{{ category }}</span>
-          </div>
-        </a>
-        {% endfor %}
-      </div>
+        <!-- Data & Design -->
+        <div class="category__wrapper">
+          <div class="post-nav__title">Data & Design</div>
+          {% for category in design_list %}
+          <a href="javascript:void(0);" class="category-item"
+            data-category="{{ category | downcase | replace: ' ', '-' }}">
+            <div class="post-nav__subtitle">
+              <span>{{ category }}</span>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
 
-      <!-- Data & Design -->
-      <div class="category__wrapper">
-        <div class="post-nav__title">Data & Design</div>
-        {% for category in design_list %}
-        <a href="javascript:void(0);" class="category-item"
-          data-category="{{ category | downcase | replace: ' ', '-' }}">
-          <div class="post-nav__subtitle">
-            <span>{{ category }}</span>
-          </div>
-        </a>
-        {% endfor %}
-      </div>
-
-      <!-- Web Development -->
-      <div class="category__wrapper">
-        <div class="post-nav__title">Web Development</div>
-        {% for category in design_list %}
-        <a href="javascript:void(0);" class="category-item"
-          data-category="{{ category | downcase | replace: ' ', '-' }}">
-          <div class="post-nav__subtitle">
-            <span>{{ category }}</span>
-          </div>
-        </a>
-        {% endfor %}
+        <!-- Web Development -->
+        <div class="category__wrapper">
+          <div class="post-nav__title">Web Development</div>
+          {% for category in design_list %}
+          <a href="javascript:void(0);" class="category-item"
+            data-category="{{ category | downcase | replace: ' ', '-' }}">
+            <div class="post-nav__subtitle">
+              <span>{{ category }}</span>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </nav>
- 
+
   <!-- Posts Wrapper -->
   <div class="post__wrapper">
     {% for post in site.posts %}
