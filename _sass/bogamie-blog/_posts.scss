@@ -1,6 +1,5 @@
 .post__nav {
     grid-area: 1 / 1 / 2 / 3;
-    transition: background-color 0.3s ease;
 
     &__wrapper {
         background-color: var(--color-primary-200);
@@ -33,7 +32,6 @@
 .category-item {
     display: block;
     text-decoration: none;
-    transition: all 0.3s ease;
     border-radius: 12px;
     margin-top: 4px;
 
@@ -53,6 +51,7 @@
 }
 
 .post-nav {
+    transition: all 0.3s ease;
     &__title {
         font-weight: 600;
         color: var(--text-primary-300);
@@ -78,8 +77,38 @@
 
 .post-item {
     display: none;
+    color: var(--text-primary-200);
+
+    a {
+        text-decoration: none;
+        color: var(--text-primary-3
+        
+        00);
+    }
 }
 
 .post-item.visible {
     display: block;
 }
+
+.post__nav,
+.category-item,
+.post-nav {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.post__nav__wrapper,
+.post-nav__title,
+.post-nav__subtitle,
+.category-item.is-active .post-nav__subtitle {
+    transition: background-color 0.3s ease;
+}
+
+a {
+    transition: color 0.3s ease;
+}
+
+.post-item {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+

@@ -101,7 +101,7 @@
 }
 
 .markdown-body h1 {
-    font-size: 2em;
+    font-size: 1.75em;
     margin: .67em 0;
 }
 
@@ -239,7 +239,7 @@
 }
 
 .markdown-body blockquote {
-    margin: 0;
+    margin: 0.5em;
 }
 
 .markdown-body ol,
@@ -640,9 +640,9 @@
 }
 
 .markdown-body blockquote {
-    padding: 0 1em;
-    /* color:#212830; */
-    border-left: .25em solid var(--color-primary-400);
+    padding: 0 0.5em;
+    // color: var(--text-primary-100);  
+    border-left: .25em solid var(--color-primary-600);
 }
 
 .markdown-body blockquote> :first-child {
@@ -666,7 +666,7 @@
 }
 
 .markdown-body h1 {
-    font-size: 2em;
+    font-size: 1.75em;
 }
 
 .markdown-body h1,

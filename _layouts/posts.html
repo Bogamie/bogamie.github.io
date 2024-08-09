@@ -1,84 +1,14 @@
 ---
 layout: default
 ---
-{% assign cs_list = "Data Structure,Algorithm,Computer Architecture" | split: "," %}
-{% assign system_list = "System Programming,Computer Network" | split: "," %}
-{% assign design_list = "Database,Design Pattern" | split: "," %}
-{% assign web_list = "Web Programming" | split: "," %}
-
-<section class="default__design">
-  <nav class="post__nav">
-    <div class="post__nav__wrapper">
-      <!-- Page Title -->
-      <h4 class="post__nav title">
-        📒 Categories
-      </h4>
-
-      <div class="post-nav__wrapper">
-        <!-- Computer Science -->
-        <div class="category__wrapper">
-          <div class="post-nav__title">Computer Science</div>
-          {% for category in cs_list %}
-          <a href="javascript:void(0);" class="category-item"
-            data-category="{{ category | downcase | replace: ' ', '-' }}">
-            <div class="post-nav__subtitle">
-              <span>{{ category }}</span>
-            </div>
-          </a>
-          {% endfor %}
-        </div>
-
-        <!-- System -->
-        <div class="category__wrapper">
-          <div class="post-nav__title">Systems</div>
-          {% for category in system_list %}
-          <a href="javascript:void(0);" class="category-item"
-            data-category="{{ category | downcase | replace: ' ', '-' }}">
-            <div class="post-nav__subtitle">
-              <span>{{ category }}</span>
-            </div>
-          </a>
-          {% endfor %}
-        </div>
-
-        <!-- Data & Design -->
-        <div class="category__wrapper">
-          <div class="post-nav__title">Data & Design</div>
-          {% for category in design_list %}
-          <a href="javascript:void(0);" class="category-item"
-            data-category="{{ category | downcase | replace: ' ', '-' }}">
-            <div class="post-nav__subtitle">
-              <span>{{ category }}</span>
-            </div>
-          </a>
-          {% endfor %}
-        </div>
-
-        <!-- Web Development -->
-        <div class="category__wrapper">
-          <div class="post-nav__title">Web Development</div>
-          {% for category in design_list %}
-          <a href="javascript:void(0);" class="category-item"
-            data-category="{{ category | downcase | replace: ' ', '-' }}">
-            <div class="post-nav__subtitle">
-              <span>{{ category }}</span>
-            </div>
-          </a>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Posts Wrapper -->
-  <div class="post__wrapper">
-    {% for post in site.posts %}
-    <div class="post-item" data-category="{{ post.categories | join: ' ' | downcase | replace: ' ', '-' }}">
-      <h2>{{ post.title }}</h2>
-      <a href="{{ post.url }}">Read more</a>
-    </div>
-    {% endfor %}
+<div class="list-container">
+  <ul id="data-list"></ul>
   </div>
-</section>
+  
+  <div class="buttons">
+    <button id="prev">Prev</button>
+    <input type="number" id="page-number" />
+    <button id="next">Next</button>
+  </div>  
 
-<script src="/assets/js/category.js"></script>
+<script src="/assets/js/pagination.js"></script>
